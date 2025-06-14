@@ -3,7 +3,7 @@ import Logo from './Logo.tsx';
 function NavBar() {
   return (
     <div
-      className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20">
+      className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
       <div className="mx-2 flex-1 flex px-2 items-center">
         <Logo className="w-20 h-20" />
         Iglesia Bautista fundamental
