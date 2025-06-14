@@ -10,3 +10,8 @@
   min-height: 100vh;
   display: flex;
 }
+
+.navbar {
+  background: rgba(0, 0, 0, 0.33);
+  color: white;
+}
