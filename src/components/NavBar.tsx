@@ -1,6 +1,8 @@
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 import Logo from './Logo.tsx';
 import LanguageSwitcher from './LanguageSwitcher.tsx';
+
 
 function NavBar() {
   const { t } = useTranslation();
@@ -14,8 +16,12 @@ function NavBar() {
       </div>
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
-          <li><a>Navbar Item 1</a></li>
-          <li><a>Navbar Item 2</a></li>
+          <li>
+            <Link to="/">{t('menu.home')}</Link>
+          </li>
+          <li>
+            <Link to="/about">{t('menu.aboutUs')}</Link>
+          </li>
           <LanguageSwitcher />
         </ul>
       </div>

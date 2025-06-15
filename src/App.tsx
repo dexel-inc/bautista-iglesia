@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <div className="drawer">
         <input id="sidebar" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex flex-col py-10">
+        <div className="drawer-content flex flex-col">
           <NavBar></NavBar>
           <Routes>
             {ROUTES.map(route => (

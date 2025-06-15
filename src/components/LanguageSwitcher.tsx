@@ -14,7 +14,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <button className="btn" onClick={handleChangeLanguage}>
+    <button className="btn ml-2" onClick={handleChangeLanguage}>
       {langLabel}
     </button>
   );
