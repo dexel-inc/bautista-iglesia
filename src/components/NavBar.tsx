@@ -1,17 +1,22 @@
+import { useTranslation } from 'react-i18next';
 import Logo from './Logo.tsx';
+import LanguageSwitcher from './LanguageSwitcher.tsx';
 
 function NavBar() {
+  const { t } = useTranslation();
+
   return (
     <div
       className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
       <div className="mx-2 flex-1 flex px-2 items-center">
         <Logo className="w-20 h-20" />
-        Iglesia Bautista fundamental
+        {t('siteTitle')}
       </div>
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
           <li><a>Navbar Item 1</a></li>
           <li><a>Navbar Item 2</a></li>
+          <LanguageSwitcher />
         </ul>
       </div>
       <div className="flex-none lg:hidden">
