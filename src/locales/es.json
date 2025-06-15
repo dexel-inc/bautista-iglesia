@@ -1,3 +1,24 @@
 {
-  "siteTitle": "Iglesia Bautista Fundamental"
+  "siteTitle": "Iglesia Bautista Fundamental",
+  "footer": {
+    "subscribe_desc": "Suscríbete para recibir noticias sobre nuestros próximos eventos",
+    "subscribe": "Suscribete",
+    "short_desc": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana."
+  },
+  "common": {
+    "read_more": "Leer más",
+    "schedules": "Horarios",
+    "navegation": "Navegación",
+    "week_days":{
+      "thursday": "Jueves",
+      "sunday": "Domingo"
+    },
+    "followUs": "Siguenos"
+  },
+  "menu": {
+    "home": "Inicio",
+    "radio": "Radio",
+    "aboutUs": "Sobre nosotros",
+    "donations": "Donaciones"
+  }
 }

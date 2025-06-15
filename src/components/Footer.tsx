@@ -1,33 +1,36 @@
 import Logo from './Logo.tsx';
 import churchImage from "@/assets/church-image.png";
+import churchSchedules from "@/services/church_schedules.json";
+import navegation from "@/services/navegation.json";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
-    <footer className="bg-white text-gray-400">
-        <section
-          className="max-w-6xl mx-auto px-6 py-10 rounded-3xl mb-10"
-          style={{
-            backgroundImage: `url(${churchImage.src})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-          }}
-        >
-          <div className="bg-black bg-opacity-40 p-10 rounded-3xl text-center text-white">
-            <h2 className="text-2xl md:text-4xl font-bold mb-6">
-              Suscríbete para recibir noticias<br />sobre nuestros próximos eventos
+    <footer id='footer' className="bg-white text-gray-400">
+        <section className="max-w-6xl mx-auto px-6 py-10">
+          <div className="bg-opacity-40 p-10 rounded-3xl text-center flex flex-col items-center justify-ceneter text-white"
+               style={{
+                 backgroundImage: `url(${churchImage})`,
+                 backgroundSize: 'cover',
+                 backgroundPosition: 'center',
+               }}>
+            <h2 className="w-1/2 text-2xl md:text-4xl font-bold mb-6">
+              {t('footer.subscribe_desc')}
             </h2>
-            <form className="max-w-xl mx-auto flex flex-col md:flex-row items-center gap-4">
+            <form className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4">
               <input
                 type="email"
                 placeholder="Ingresa tu correo"
-                className="w-full md:flex-1 px-4 py-3 rounded-xl text-gray-800 focus:outline-none"
+                className="w-full md:flex-1 px-4 py-3 rounded-xl text-gray-800 bg-white w-1/2 focus:outline-none"
                 required
               />
               <button
                 type="submit"
                 className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl"
               >
-                Subscribe
+                {t('footer.subscribe')}
               </button>
             </form>
           </div>
@@ -37,32 +40,31 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Logo className="w-12 h-12"></Logo>
-              <h3 className="font-semibold text-gray-800">Iglesia Bautista fundamental</h3>
+              <h3 className="font-semibold text-gray-800">{t('siteTitle')}</h3>
             </div>
             <p className="text-sm mb-2">
-              Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica,
-              Cristo-céntrica, y misionera que sirve a la población Hispana.{' '}
-              <a href="#" className="text-blue-600 underline hover:text-blue-800">Leer más</a>
+              {t('footer.short_desc') + ' '}
+              <a href="#" className="text-gray-600 underline hover:text-gray-800"> {t('common.read_more')}</a>
             </p>
             <div className="mt-4">
-              <h4 className="font-semibold text-sm uppercase text-gray-800">Horarios</h4>
-              <p className="text-sm">Jueves — 7:00pm</p>
-              <p className="text-sm">Domingos — 11:00am</p>
+              <h4 className="font-semibold text-sm uppercase text-gray-800">{t('common.schedules')}</h4>
+              {Object.keys(churchSchedules).map((title) => (
+                <p className="text-sm"> {t(`common.week_days.${title}`)} — {churchSchedules[title].start_time}</p>
+              ))}
             </div>
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm uppercase text-gray-800 mb-3">Navegación</h4>
+            <h4 className="font-semibold text-sm uppercase text-gray-800 mb-3">{ t('common.navegation') }</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-gray-800">Inicio</a></li>
-              <li><a href="#" className="hover:text-gray-800">Radio</a></li>
-              <li><a href="#" className="hover:text-gray-800">Sobre nosotros</a></li>
-              <li><a href="#" className="hover:text-gray-800">Donaciones</a></li>
+              {Object.values(navegation).map((title) => (
+                <li><a href={`#${title}`} className="hover:text-gray-800">{t(`menu.${title}`)}</a></li>
+              ))}
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-sm uppercase mb-3 text-gray-800">Síguenos</h4>
+            <h4 className="font-semibold text-sm uppercase mb-3 text-gray-800">{ t(`common.followUs`) }</h4>
             <a
               href="#"
               aria-label="Canal de YouTube"
