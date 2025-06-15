@@ -1,3 +1,24 @@
 {
-  "siteTitle": "Fundamental Baptist Church"
+  "siteTitle": "Fundamental Baptist Church",
+  "footer": {
+    "subscribe_desc": "Subscribe to receive news about our upcoming events",
+    "subscribe": "Subscribe",
+    "short_desc": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic population."
+  },
+  "common": {
+    "read_more": "Read more",
+    "schedules": "Schedules",
+    "navegation": "Navigation",
+    "week_days":{
+      "thursday": "Thursday",
+      "sunday": "Sunday"
+    },
+    "followUs": "Follow us"
+  },
+  "menu": {
+    "home": "Home",
+    "radio": "Radio",
+    "aboutUs": "About us",
+    "donations": "Donations"
+  }
 }
