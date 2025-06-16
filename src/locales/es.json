@@ -20,5 +20,8 @@
     "radio": "Radio",
     "aboutUs": "Sobre nosotros",
     "donations": "Donaciones"
+  },
+  "radio": {
+    "button": "Escúchanos ahora"
   }
 }
