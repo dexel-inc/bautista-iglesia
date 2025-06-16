@@ -2,7 +2,7 @@ import churchImg from "../../assets/community-meeting.jpg";
 
 export default function WhoWeAre() {
   return (
-    <div className="w-full h-[100vh] py-8 px-4 bg-white flex flex-col justify-center lg:flex-row lg:items-center lg:px-0 lg:pl-4">
+    <div className="w-full py-8 px-4 bg-white flex flex-col justify-center lg:flex-row lg:items-center lg:px-0 lg:pl-4">
       <div className="max-w-4xl lg:w-1/2 rounded-xl flex flex-col items-center">
         <div className="flex-1 p-2 md:p-6">
           <h2 className="title title-color text-4xl md:text-6xl font-bold mb-4">
