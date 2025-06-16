@@ -17,6 +17,11 @@
     "languages": {
       "EN": "Inglés",
       "ES": "Español"
+    },
+    "inputs": {
+      "email": {
+        "description": "Ingresa tu correo"
+      }
     }
   },
   "menu": {

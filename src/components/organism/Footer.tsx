@@ -22,7 +22,7 @@ function Footer() {
             <form className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4">
               <input
                 type="email"
-                placeholder="Ingresa tu correo"
+                placeholder={t('common.inputs.email.description')}
                 className="w-full md:flex-1 px-4 py-3 rounded-xl text-gray-800 bg-white w-1/2 focus:outline-none"
                 required
               />
