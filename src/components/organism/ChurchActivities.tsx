@@ -8,6 +8,7 @@ import ActivitiesIco from '../atoms/ActivitiesIco.tsx';
 import BibleIco from '../atoms/BibleIco.tsx';
 import CampIco from '../atoms/CampIco.tsx';
 import { Trans, useTranslation } from 'react-i18next';
+import AnimateOnScroll from '../molecules/AnimateOnScroll.tsx';
 
 const slides = {
   'preaching': {
@@ -41,9 +42,11 @@ export default function ChurchActivities() {
 
   return (
     <section className="py-12 mx-16">
-      <h2 className="title title-color text-4xl font-bold">
-        <Trans i18nKey="common.activities" /> <span className="text-orange-500">{t('common.our_church')}</span>
-      </h2>
+      <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
+        <h2 className="title title-color text-4xl font-bold">
+          <Trans i18nKey="common.activities" /> <span className="text-orange-500">{t('common.our_church')}</span>
+        </h2>
+      </AnimateOnScroll>
       <Carrousel className="w-full" slides={Object.keys(slides)} lengthWithPageLG="4">
             {Object.keys(slides).map((text, i) => (
               <div

@@ -1,13 +1,16 @@
 import churchImg from "../../assets/community-meeting.jpg";
+import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
 
 export default function WhoWeAre() {
   return (
     <div className="w-full py-8 px-4 bg-white flex flex-col justify-center lg:flex-row lg:items-center lg:px-0 lg:pl-4">
       <div className="max-w-4xl lg:w-1/2 rounded-xl flex flex-col items-center">
         <div className="flex-1 p-2 md:p-6">
-          <h2 className="title title-color text-4xl md:text-6xl font-bold mb-4">
-            ¿Quienes somos?
-          </h2>
+          <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
+            <h2 className="title title-color text-4xl md:text-6xl font-bold mb-4">
+              ¿Quienes somos?
+            </h2>
+          </AnimateOnScroll>
           <p className="text-color text-sm md:text-lg leading-relaxed">
             Somos una iglesia fundamental dedicada a la familia. Nuestro
             propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera
