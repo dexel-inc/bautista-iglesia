@@ -14,9 +14,11 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <button className="btn ml-2" onClick={handleChangeLanguage}>
-      {langLabel}
-    </button>
+    <li>
+      <a href="#" onClick={handleChangeLanguage}>
+        {langLabel + ' - ' + t(`common.languages.${langLabel}`)}
+      </a>
+    </li>
   );
 };
 

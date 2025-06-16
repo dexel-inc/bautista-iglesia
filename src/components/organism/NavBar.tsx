@@ -1,8 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import Logo from './Logo.tsx';
-import LanguageSwitcher from './LanguageSwitcher.tsx';
-
+import Logo from '@/components/atoms/Logo.tsx';
+import LanguageSwitcher from '@/components/molecules/LanguageSwitcher.tsx';
 
 function NavBar() {
   const { t } = useTranslation();
@@ -10,7 +9,7 @@ function NavBar() {
   return (
     <div
       className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
-      <div className="mx-2 flex-1 flex px-2 items-center">
+      <div className="title mx-2 flex-1 flex px-2 items-center">
         <Logo className="w-20 h-20" />
         {t('siteTitle')}
       </div>
@@ -23,10 +22,13 @@ function NavBar() {
             <Link to="/about">{t('menu.aboutUs')}</Link>
           </li>
           <LanguageSwitcher />
+          <a href="#donations" className="ml-4 btn bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none">
+            {t('menu.donations')}
+          </a>
         </ul>
       </div>
       <div className="flex-none lg:hidden">
-        <label htmlFor="sidebar" aria-label="open sidebar" className="btn btn-square btn-ghost">
+      <label htmlFor="sidebar" aria-label="open sidebar" className="btn btn-square btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

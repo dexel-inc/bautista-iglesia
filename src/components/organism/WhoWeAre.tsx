@@ -5,7 +5,7 @@ export default function WhoWeAre() {
     <div className="w-full h-[100vh] py-8 px-4 bg-white flex flex-col justify-center">
       <div className="max-w-4xl w-full rounded-xl flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-6 p-6 md:p-10">
         <div className="flex-1">
-          <h2 className="title-color text-4xl md:text-6xl font-bold mb-4">
+          <h2 className="title title-color text-4xl md:text-6xl font-bold mb-4">
             ¿Quienes somos?
           </h2>
           <p className="text-color text-sm md:text-lg leading-relaxed">

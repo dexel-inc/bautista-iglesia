@@ -13,7 +13,16 @@
       "thursday": "Thursday",
       "sunday": "Sunday"
     },
-    "followUs": "Follow us"
+    "followUs": "Follow us",
+    "languages": {
+      "EN": "English",
+      "ES": "Spanish"
+    },
+    "inputs": {
+      "email": {
+        "description": "Enter your email"
+      }
+    }
   },
   "menu": {
     "home": "Home",
