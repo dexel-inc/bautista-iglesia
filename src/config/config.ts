@@ -1,4 +1,4 @@
 const env = import.meta.env;
 
-// Currently not using site title from env, but keeping it for future usages
-export const SITE_TITLE = env.VITE_SITE_TITLE || 'Title not set in env file';
+export const YOUTUBE_API_KEY = env.VITE_YOUTUBE_API_KEY;
+export const CHANNEL_ID = env.VITE_CHANNEL_ID;
