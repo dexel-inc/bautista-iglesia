@@ -28,7 +28,6 @@ function App() {
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
           </Routes>
-          <Radio/>
           <Footer></Footer>
         </div>
         <SideBar />

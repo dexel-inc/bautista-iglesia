@@ -20,11 +20,20 @@
     },
     "inputs": {
       "email": {
+        "field": "Correo Electrónico",
         "description": "Ingresa tu correo"
+      },
+      "name": {
+        "field": "Nombre"
+      },
+      "phone": {
+        "field": "Teléfono"
       }
     },
     "activities": "Actividades <br /> de",
-    "our_church": "Nuestra Iglesia"
+    "our_church": "Nuestra Iglesia",
+    "support": "Apoya",
+    "our_ministry": "Nuestro Ministerio"
   },
   "menu": {
     "home": "Inicio",
@@ -47,5 +56,10 @@
     "activities": "Actividades para jóvenes y niños",
     "bible": "Estudios Bíblicos en diferentes hogares",
     "camp": "Campamentos Bíblicos"
+  },
+  "support": {
+    "description": "Tu generosidad marca la diferencia. <br /> Si deseas apoyar este ministerio y ser parte de lo que Dios está haciendo a través de nuestra iglesia, puedes realizar tu donación de forma rápida y segura usando Zelle.",
+    "thanks": "¡Gracias Por Sembrar En La Obra Del Señor!",
+    "support_now": "Apoyanos ahora"
   }
 }

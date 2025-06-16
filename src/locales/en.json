@@ -20,16 +20,25 @@
     },
     "inputs": {
       "email": {
+        "field": "Email",
         "description": "Enter your email"
+      },
+      "name": {
+        "field": "Name"
+      },
+      "phone": {
+        "field": "Phone"
       }
     },
     "activities": "Activities <br /> of",
-    "our_church": "Our Church"
+    "our_church": "Our Church",
+    "support": "Support",
+    "our_ministry": "Our Ministry"
   },
   "menu": {
     "home": "Home",
     "radio": "Radio",
-    "aboutUs": "About us",
+    "aboutUs": "About Us",
     "donations": "Donations"
   },
   "radio": {
@@ -46,6 +55,11 @@
     "family": "A family-oriented ministry",
     "activities": "Activities for youth and children",
     "bible": "Bible studies in different homes",
-    "camp": "Bible camps"
+    "camp": "Bible Camps"
+  },
+  "support": {
+    "description": "Your generosity makes a difference. <br /> If you would like to support this ministry and be part of what God is doing through our church, you can make your donation quickly and securely using Zelle.",
+    "thanks": "Thank you for sowing into the work of the Lord!",
+    "support_now": "Support us now"
   }
 }

@@ -11,7 +11,7 @@ function FloatingRadioButton() {
             </div>
             <div className="flex shadow-lg shadow-gray-600 items-center duration-300 justify-center bg-orange-500 h-16 w-16 hover:bg-orange-600 rounded-full">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                     width="100%" viewBox="0 0 288 224" enable-background="new 0 0 288 224"
+                     width="100%" viewBox="0 0 288 224" enableBackground="new 0 0 288 224"
                      className="-ml-1 h-16 w-16 fill-current"
                 >
                     <path fill="#ffffff" opacity="1.000000" stroke="none"
