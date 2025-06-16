@@ -22,7 +22,9 @@
       "email": {
         "description": "Ingresa tu correo"
       }
-    }
+    },
+    "activities": "Actividades <br /> de",
+    "our_church": "Nuestra Iglesia"
   },
   "menu": {
     "home": "Inicio",
@@ -35,5 +37,15 @@
     "description": "Te invitamos a conocer nuestra emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
     "button": "Escúchanos ahora",
     "schedule": "Lunes - Viernes 6/7 Hora de Az<br/>9 a.m / p.m EST"
+  },
+  "activities": {
+    "preaching": "Predicación Bíblica, viva y directa",
+    "class": "Clases para niños y adultos",
+    "music": "Musica que honra al Señor",
+    "friends": "Compañerismo edificante y animador",
+    "family": "Un ministerio orientado para la familia",
+    "activities": "Actividades para jóvenes y niños",
+    "bible": "Estudios Bíblicos en diferentes hogares",
+    "camp": "Campamentos Bíblicos"
   }
 }
