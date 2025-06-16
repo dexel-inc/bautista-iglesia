@@ -29,5 +29,11 @@
     "radio": "Radio",
     "aboutUs": "About us",
     "donations": "Donations"
+  },
+  "radio": {
+    "title": "God Wants to Talk to You",
+    "description": "We invite you to discover our Christian radio station, The Voice, a ministry of the Berea Fundamental Baptist Church dedicated to faithfully proclaiming the gospel of Jesus Christ through preaching sound doctrine and music that exalts the Lord.",
+    "button": "Listen to us now",
+    "schedule": "Monday - Friday 6/7 AZ Time<br/>9 a.m. / p.m. EST"
   }
 }

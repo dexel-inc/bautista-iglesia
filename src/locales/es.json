@@ -29,5 +29,11 @@
     "radio": "Radio",
     "aboutUs": "Sobre nosotros",
     "donations": "Donaciones"
+  },
+  "radio": {
+    "title": "Dios Te Quiere Hablar",
+    "description": "Te invitamos a conocer nuestra emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
+    "button": "Escúchanos ahora",
+    "schedule": "Lunes - Viernes 6/7 Hora de Az<br/>9 a.m / p.m EST"
   }
 }
