@@ -1,5 +1,6 @@
 import radioImage from "@/assets/radio-image.jpg";
 import { useTranslation } from 'react-i18next';
+import { Trans } from 'react-i18next';
 
 function Radio() {
     const { t } = useTranslation();
@@ -44,9 +45,7 @@ function Radio() {
                             </svg>
 
                             <p className="title-color text-sm md:text-lg leading-relaxed">
-                                {t('radio.schedule')}
-                                <br />
-                                9 a.m / p.m EST
+                                <Trans i18nKey="radio.schedule" />
                             </p>
                         </div>
 
