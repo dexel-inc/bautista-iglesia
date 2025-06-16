@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ROUTES } from './config/routes.tsx';
 import FloatingRadioButton from "./components/atoms/FloatingRadioButton";
+import Radio from "./components/organism/Radio.tsx";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -27,6 +28,7 @@ function App() {
               <Route key={route.path} path={route.path} element={route.element} />
             ))}
           </Routes>
+          <Radio/>
           <Footer></Footer>
         </div>
         <SideBar />
