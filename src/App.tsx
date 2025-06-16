@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import './App.css'
-import NavBar from './components/organism/NavBar.tsx';
-import SideBar from './components/organism/SideBar.tsx';
-import Footer from './components/organism/Footer.tsx';
+import NavBar from '@/components/organism/NavBar.tsx';
+import SideBar from '@/components/organism/SideBar.tsx';
+import Footer from '@/components/organism/Footer.tsx';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { ROUTES } from './config/routes.tsx';
-import FloatingRadioButton from "./components/atoms/FloatingRadioButton";
-import Radio from "./components/organism/Radio.tsx";
+import { ROUTES } from '@/config/routes.tsx';
+import FloatingRadioButton from "@/components/atoms/FloatingRadioButton";
+import Radio from "@/components/organism/Radio.tsx";
 
 function App() {
   const { t, i18n } = useTranslation();
