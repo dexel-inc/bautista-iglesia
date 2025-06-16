@@ -13,7 +13,11 @@
       "thursday": "Jueves",
       "sunday": "Domingo"
     },
-    "followUs": "Siguenos"
+    "followUs": "Siguenos",
+    "languages": {
+      "EN": "Inglés",
+      "ES": "Español"
+    }
   },
   "menu": {
     "home": "Inicio",

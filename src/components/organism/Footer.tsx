@@ -1,4 +1,4 @@
-import Logo from './Logo.tsx';
+import Logo from '@/components/atoms/Logo.tsx';
 import churchImage from "@/assets/church-image.png";
 import churchSchedules from "@/services/church_schedules.json";
 import navegation from "@/services/navegation.json";
@@ -16,7 +16,7 @@ function Footer() {
                  backgroundSize: 'cover',
                  backgroundPosition: 'center',
                }}>
-            <h2 className="w-1/2 text-2xl md:text-4xl font-bold mb-6">
+            <h2 className="title w-4/5 md:w-1/2 text-2xl md:text-4xl font-semibold mb-6">
               {t('footer.subscribe_desc')}
             </h2>
             <form className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4">
@@ -40,7 +40,7 @@ function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <Logo className="w-12 h-12"></Logo>
-              <h3 className="font-semibold text-gray-800">{t('siteTitle')}</h3>
+              <h3 className="font-semibold text-gray-800 title">{t('siteTitle')}</h3>
             </div>
             <p className="text-sm mb-2">
               {t('footer.short_desc') + ' '}
@@ -49,7 +49,7 @@ function Footer() {
             <div className="mt-4">
               <h4 className="font-semibold text-sm uppercase text-gray-800">{t('common.schedules')}</h4>
               {Object.keys(churchSchedules).map((title) => (
-                <p className="text-sm"> {t(`common.week_days.${title}`)} — {churchSchedules[title].start_time}</p>
+                <p key={title} className="text-sm"> {t(`common.week_days.${title}`)} — {churchSchedules[title].start_time}</p>
               ))}
             </div>
           </div>
@@ -58,7 +58,7 @@ function Footer() {
             <h4 className="font-semibold text-sm uppercase text-gray-800 mb-3">{ t('common.navegation') }</h4>
             <ul className="space-y-2 text-sm">
               {Object.values(navegation).map((title) => (
-                <li><a href={`#${title}`} className="hover:text-gray-800">{t(`menu.${title}`)}</a></li>
+                <li key={title}><a href={`#${title}`} className="hover:text-gray-800">{t(`menu.${title}`)}</a></li>
               ))}
             </ul>
           </div>
@@ -85,10 +85,6 @@ function Footer() {
         <div className="border-t border-gray-200 py-6 text-center text-sm">
           <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
             <p>© 2025. All Right Reserved. Dexel inc</p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-gray-800">Términos y condiciones</a>
-              <a href="#" className="hover:text-gray-800">Política de privacidad</a>
-            </div>
           </div>
         </div>
       </footer>

@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 @plugin "daisyui" {
   themes: light --default;
@@ -10,6 +12,13 @@
   width: 100%;
   min-height: 100vh;
   display: flex;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.title {
+  font-family: "David Libre", serif;
 }
 
 .navbar {
@@ -32,9 +41,9 @@
 }
 
 .title-color {
-  color: #101A24;
+  color: var(--color-gray-800);
 }
 
 .text-color {
-  color: #5C6574;
+  color: var(--color-gray-400);
 }

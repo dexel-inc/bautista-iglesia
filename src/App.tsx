@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import './App.css'
-import NavBar from './components/NavBar.tsx';
-import SideBar from './components/SideBar.tsx';
-import Footer from './components/Footer.tsx';
+import NavBar from './components/organism/NavBar.tsx';
+import SideBar from './components/organism/SideBar.tsx';
+import Footer from './components/organism/Footer.tsx';
 import { useTranslation } from 'react-i18next';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ROUTES } from './config/routes.tsx';

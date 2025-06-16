@@ -1,5 +1,5 @@
-import Hero from "../molecules/hero";
-import WhoWeAre from "../molecules/WhoWeAre";
+import Hero from "@/components/organism/Hero.tsx";
+import WhoWeAre from "@/components/organism/WhoWeAre.tsx";
 
 export default function Home() {
   return (
