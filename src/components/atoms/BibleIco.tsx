@@ -1,4 +1,6 @@
-export default function BibleIco({className}) {
+import type {Props} from "@/components/atoms/Ico.ts";
+
+export default function BibleIco({className}: Props) {
   return (
     <svg className={className} viewBox="0 0 137 118" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_352_281)">

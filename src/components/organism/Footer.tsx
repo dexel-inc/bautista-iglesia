@@ -1,8 +1,10 @@
 import Logo from '@/components/atoms/Logo.tsx';
 import churchImage from "@/assets/church-image.png";
-import churchSchedules from "@/services/church_schedules.json";
+import churchSchedulesJson from "@/services/church_schedules.json";
 import navegation from "@/services/navegation.json";
 import { useTranslation } from 'react-i18next';
+
+const churchSchedules: Record<string, { start_time: string }> = churchSchedulesJson;
 
 function Footer() {
   const { t } = useTranslation();

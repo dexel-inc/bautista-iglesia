@@ -1,4 +1,6 @@
-export default function ActivitiesIco({className}) {
+import type {Props} from "@/components/atoms/Ico.ts";
+
+export default function ActivitiesIco({className}: Props) {
   return (
     <svg className={className} viewBox="0 0 115 111" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_352_239)">

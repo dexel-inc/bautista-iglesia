@@ -1,4 +1,6 @@
-export default function FamilyIco({className}) {
+import type {Props} from "@/components/atoms/Ico.ts";
+
+export default function FamilyIco({className}: Props) {
   return (
     <svg className={className} viewBox="0 0 121 108" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M79.2905 34.3748L77.0059 34.3535L78.6692 35.6366L79.565 35.6227L79.2905 34.3748Z" fill="#EA6D27" />

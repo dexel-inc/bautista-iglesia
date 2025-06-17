@@ -1,4 +1,6 @@
-export default function ZelleIco({className}) {
+import type {Props} from "@/components/atoms/Ico.ts";
+
+export default function ZelleIco({className}: Props) {
   return (
     <svg className={className} viewBox="0 0 105 96" fill="none" xmlns="http://www.w3.org/2000/svg"
          xmlnsXlink="http://www.w3.org/1999/xlink">

@@ -1,4 +1,6 @@
-export default function FriendsIco({className}) {
+import type {Props} from "@/components/atoms/Ico.ts";
+
+export default function FriendsIco({className}: Props) {
   return (
     <svg className={className} viewBox="0 0 135 107" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path

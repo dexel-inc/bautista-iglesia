@@ -1,5 +1,7 @@
 {
-  "files": [],
+  "files": [
+    "node_modules/@types/node/module.d.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -15,15 +17,17 @@
       "dom.iterable",
       "esnext"
     ],
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
-    "noEmit": true,
+    "composite": true,
     "incremental": true,
+    "noEmit": false,
     "module": "esnext",
-    "esModuleInterop": true,
-    "moduleResolution": "bundler",
-    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
     "plugins": [
@@ -31,11 +35,12 @@
         "name": "next"
       }
     ],
+    "verbatimModuleSyntax": false,
+    "emitDeclarationOnly": true,
     "noImplicitAny": false,
+    "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
+      "@/*": ["src/*"]
     }
   },
   "include": [

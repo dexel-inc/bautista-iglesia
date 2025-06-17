@@ -1,4 +1,3 @@
-import React from 'react'
 import ZelleIco from '@/components/atoms/ZelleIco.tsx';
 import { Trans, useTranslation } from 'react-i18next';
 

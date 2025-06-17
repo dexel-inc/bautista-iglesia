@@ -1,4 +1,3 @@
-import React from 'react'
 import Carrousel from '../molecules/Carrousel.tsx';
 import PredicationIco from '../atoms/PredicationIco.tsx';
 import FamilyIco from '../atoms/FamilyIco.tsx';
@@ -9,8 +8,9 @@ import BibleIco from '../atoms/BibleIco.tsx';
 import CampIco from '../atoms/CampIco.tsx';
 import { Trans, useTranslation } from 'react-i18next';
 import AnimateOnScroll from '../molecules/AnimateOnScroll.tsx';
+import {JSX} from "react";
 
-const slides = {
+const slides: Record<string, { logo: JSX.Element }> = {
   'preaching': {
     "logo": <PredicationIco />
   },
@@ -35,7 +35,7 @@ const slides = {
   "camp": {
     "logo": <CampIco />
   }
-}
+};
 
 export default function ChurchActivities() {
   const { t } = useTranslation();
@@ -47,7 +47,7 @@ export default function ChurchActivities() {
           <Trans i18nKey="common.activities" /> <span className="text-orange-500">{t('common.our_church')}</span>
         </h2>
       </AnimateOnScroll>
-      <Carrousel className="w-full" slides={Object.keys(slides)} lengthWithPageLG="4">
+      <Carrousel className="w-full" slides={Object.keys(slides)} lengthWithPageLG={4}>
             {Object.keys(slides).map((text, i) => (
               <div
                 key={i}

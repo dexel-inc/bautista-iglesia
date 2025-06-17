@@ -1,6 +1,13 @@
-import { useEffect, useRef, useState } from 'react'
+import {ReactNode, useEffect, useRef, useState} from 'react'
 
-export default function Carrousel({slides, lengthWithPageLG, children}) {
+export type Props = {
+  slides: Array<string>;
+  lengthWithPageLG: number,
+  children: ReactNode,
+  className: string
+};
+
+export default function Carrousel({slides, lengthWithPageLG, children, className}: Props) {
   const carouselRef = useRef<HTMLDivElement>(null)
   const [currentSlide, setCurrentSlide] = useState(0)
   const [slidesPerView, setSlidesPerView] = useState(1)
@@ -39,7 +46,7 @@ export default function Carrousel({slides, lengthWithPageLG, children}) {
   }
 
   return (
-    <div className="relative">
+    <div className={`relative ${className}`}>
       <div className="w-full relative min-h-72 overflow-hidden rounded-lg content-center">
         <div
           ref={carouselRef}
