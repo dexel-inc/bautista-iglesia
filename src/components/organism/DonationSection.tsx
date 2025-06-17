@@ -1,5 +1,6 @@
 import ZelleIco from '@/components/atoms/ZelleIco.tsx';
 import { Trans, useTranslation } from 'react-i18next';
+import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";
 
 const DonationSection = () => {
   const { t } = useTranslation();
@@ -8,9 +9,11 @@ const DonationSection = () => {
     <section id="donations" className="px-4 bg-white">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between">
         <div className="flex-1 text-center lg:text-left">
-          <h2 className="text-3xl md:text-4xl font-bold title title-color mb-6">
-            { t('common.support') } <span className="text-orange-500">{ t('common.our_ministry') }</span>
-          </h2>
+          <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
+            <h2 className="text-3xl md:text-4xl font-bold title title-color mb-6">
+              { t('common.support') } <span className="text-orange-500">{ t('common.our_ministry') }</span>
+            </h2>
+          </AnimateOnScroll>
 
           <p className="mb-4 leading-relaxed">
             <Trans i18nKey='support.description' />

@@ -15,16 +15,19 @@ function NavBar() {
       </div>
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
-          <li>
-            <Link to="/">{t('menu.home')}</Link>
-          </li>
-          <li>
-            <Link to="/about">{t('menu.aboutUs')}</Link>
-          </li>
-          <LanguageSwitcher />
-          <a href="#donations" className="ml-4 btn bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none">
-            {t('menu.donations')}
-          </a>
+            <li>
+                <Link to="/#home">{t('menu.home')}</Link>
+            </li>
+            <li>
+                <a href="/#radio">{t('menu.radio')}</a>
+            </li>
+            <li>
+                <a href="/about">{t('menu.aboutUs')}</a>
+            </li>
+            <LanguageSwitcher />
+            <a href="/#donations" className="ml-4 btn bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none">
+                {t('menu.donations')}
+            </a>
         </ul>
       </div>
       <div className="flex-none lg:hidden">

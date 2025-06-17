@@ -1,4 +1,4 @@
-import desiertoImg from "../../assets/desert-hero-image.jpg";
+import desiertoImg from "../../assets/desert-hero-image.png";
 import { useTranslation } from 'react-i18next';
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
 
@@ -7,8 +7,9 @@ export default function Hero() {
 
   return (
     <div
-      className="w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
-      style={{ backgroundImage: `url(${desiertoImg})` }}
+        id="home"
+        className="w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
+        style={{ backgroundImage: `url(${desiertoImg})` }}
     >
       <div className="w-full h-full bg-black/30 flex items-center justify-center">
         <div className="text-center text-white space-y-4">

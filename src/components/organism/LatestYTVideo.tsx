@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { CHANNEL_ID, YOUTUBE_API_KEY } from "@/config/config";
+import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";
 
 interface VideoInfo {
   videoId: string;
@@ -34,9 +35,11 @@ export default function LatestYoutubeVideo() {
 
   return (
     <section className="w-full flex flex-col items-center p-8 bg-white">
-      <h2 className="text-4xl font-bold mb-4 text-center title">
-        Último <span className="text-orange-400">Video</span>
-      </h2>
+      <AnimateOnScroll animation="animate-fade-down animate-fill-both animate-duration-[2000ms] animate-ease-out">
+        <h2 className="text-4xl font-bold mb-4 text-center title">
+          Último <span className="text-orange-400">Video</span>
+        </h2>
+      </AnimateOnScroll>
       <div className="rounded-xl overflow-hidden shadow-lg mb-4">
         <iframe
           src={video ? `https://www.youtube.com/embed/${video.videoId}` : ""}

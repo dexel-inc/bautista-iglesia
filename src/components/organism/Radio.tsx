@@ -1,6 +1,7 @@
 import radioImage from "@/assets/radio-image.jpg";
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
+import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";
 
 function Radio() {
     const { t } = useTranslation();
@@ -22,9 +23,11 @@ function Radio() {
 
                 <div className="relative z-10  grid grid-cols-1 md:grid-cols-2 h-full p-10 px-16 md:p-20 items-center">
                     <div className="flex flex-col justify-between gap-10">
-                        <h2 className="title-color title text-4xl md:text-6xl font-bold mb-4">
-                            {t('radio.title')}
-                        </h2>
+                        <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
+                            <h2 className="title-color title text-4xl md:text-6xl font-bold mb-4">
+                                {t('radio.title')}
+                            </h2>
+                        </AnimateOnScroll>
 
                         <p className="title-color text-md md:text-lg leading-relaxed">
                             {t('radio.description')}
