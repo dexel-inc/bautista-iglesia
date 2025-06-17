@@ -8,7 +8,7 @@ import BibleIco from '../atoms/BibleIco.tsx';
 import CampIco from '../atoms/CampIco.tsx';
 import { Trans, useTranslation } from 'react-i18next';
 import AnimateOnScroll from '../molecules/AnimateOnScroll.tsx';
-import {JSX} from "react";
+import type {JSX} from "react";
 
 const slides: Record<string, { logo: JSX.Element }> = {
   'preaching': {
