@@ -1,4 +1,4 @@
-import {Component, useEffect} from 'react';
+import {useEffect} from 'react';
 import './App.css'
 import NavBar from '@/components/organism/NavBar.tsx';
 import SideBar from '@/components/organism/SideBar.tsx';

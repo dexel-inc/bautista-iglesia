@@ -1,3 +1,7 @@
+import Hero from "@/components/organism/aboutUs/Hero.tsx";
+
 export default function About() {
-  return <h2>Sobre nosotros</h2>;
+  return <section className="flex flex-col">
+    <Hero/>
+  </section>;
 }
