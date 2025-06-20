@@ -3,7 +3,8 @@
   "footer": {
     "subscribe_desc": "Subscribe to receive news about our upcoming events",
     "subscribe": "Subscribe",
-    "short_desc": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic population."
+    "short_desc": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic population.",
+    "copyright": "© {{year}}. All Rights Reserved. Dexel inc"
   },
   "common": {
     "read_more": "Read more",
@@ -14,6 +15,7 @@
       "sunday": "Sunday"
     },
     "followUs": "Follow us",
+    "hero_msg": "Come, all you who are thirsty...",
     "languages": {
       "EN": "English",
       "ES": "Spanish"
@@ -61,5 +63,11 @@
     "description": "Your generosity makes a difference. <br /> If you would like to support this ministry and be part of what God is doing through our church, you can make your donation quickly and securely using Zelle.",
     "thanks": "Thank you for sowing into the work of the Lord!",
     "support_now": "Support us now"
-  }
+  },
+  "who_we_are": {
+    "title": "Who are we?",
+    "description": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic community. We believe that God's Word has the answers people need, and we strive to preach and teach it correctly. If you are looking for a place to gather, or are interested in learning more about God,",
+    "welcome": "we warmly welcome you!"
+  },
+  "latest_video_title" : "Latest Video"
 }

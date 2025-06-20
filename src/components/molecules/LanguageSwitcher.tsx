@@ -1,5 +1,7 @@
 import { useTranslation } from 'react-i18next';
 
+const LANGUAGE_KEY = 'app_language';
+
 const LanguageSwitcher = () => {
   const { i18n, t } = useTranslation();
   const currentLang = i18n.language;
@@ -9,6 +11,7 @@ const LanguageSwitcher = () => {
 
   const handleChangeLanguage = () => {
     i18n.changeLanguage(otherLang).then(() => {
+      localStorage.setItem(LANGUAGE_KEY, otherLang);
       document.title = 'IBF - ' + t('siteTitle', { lng: otherLang });
     });
   };

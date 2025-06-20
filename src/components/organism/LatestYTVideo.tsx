@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CHANNEL_ID, YOUTUBE_API_KEY } from "@/config/config";
 import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";
+import { useTranslation } from "react-i18next";
 
 interface VideoInfo {
   videoId: string;
@@ -9,6 +10,8 @@ interface VideoInfo {
 }
 
 export default function LatestYoutubeVideo() {
+  const { t } = useTranslation();
+
   const [video, setVideo] = useState<VideoInfo | null>(null);
 
   useEffect(() => {
@@ -23,7 +26,7 @@ export default function LatestYoutubeVideo() {
           setVideo({
             videoId: latest.id.videoId,
             title: latest.snippet.title,
-            description: latest.snippet.description
+            description: latest.snippet.description,
           });
         }
       } catch (e) {
@@ -33,11 +36,14 @@ export default function LatestYoutubeVideo() {
     fetchLatestVideo();
   }, []);
 
+  const latestVideoTitleSplitted = t("latest_video_title").split(" ");
+
   return (
     <section className="w-full flex flex-col items-center p-8 bg-white">
       <AnimateOnScroll animation="animate-fade-down animate-fill-both animate-duration-[2000ms] animate-ease-out">
         <h2 className="text-4xl font-bold mb-4 text-center title">
-          Último <span className="text-orange-400">Video</span>
+          {latestVideoTitleSplitted[0]}{" "}
+          <span className="text-orange-400">{latestVideoTitleSplitted[1]}</span>
         </h2>
       </AnimateOnScroll>
       <div className="rounded-xl overflow-hidden shadow-lg mb-4">
@@ -52,9 +58,7 @@ export default function LatestYoutubeVideo() {
       </div>
       {video && (
         <div className="w-[70vw] px-2">
-          <h3 className="font-bold text-lg md:text-xl mb-1">
-            {video.title}
-          </h3>
+          <h3 className="font-bold text-lg md:text-xl mb-1">{video.title}</h3>
           <p className="text-gray-700 text-sm">{video.description}</p>
         </div>
       )}

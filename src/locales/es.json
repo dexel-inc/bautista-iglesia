@@ -3,7 +3,8 @@
   "footer": {
     "subscribe_desc": "Suscríbete para recibir noticias sobre nuestros próximos eventos",
     "subscribe": "Suscribete",
-    "short_desc": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana."
+    "short_desc": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana.",
+    "copyright": "© {{year}}. Todos los derechos reservados. Dexel inc"
   },
   "common": {
     "read_more": "Leer más",
@@ -14,6 +15,7 @@
       "sunday": "Domingo"
     },
     "followUs": "Siguenos",
+    "hero_msg": "A todos los sedientos venid…",
     "languages": {
       "EN": "Inglés",
       "ES": "Español"
@@ -61,5 +63,11 @@
     "description": "Tu generosidad marca la diferencia. <br /> Si deseas apoyar este ministerio y ser parte de lo que Dios está haciendo a través de nuestra iglesia, puedes realizar tu donación de forma rápida y segura usando Zelle.",
     "thanks": "¡Gracias Por Sembrar En La Obra Del Señor!",
     "support_now": "Apoyanos ahora"
-  }
+  },
+  "who_we_are": {
+    "title": "¿Quienes somos?",
+    "description": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana. Creemos que la Palabra de Dios tiene las respuestas que el hombre necesita, y tratamos de predicar y enseñarla correctamente. Si está buscando un lugar de congregarse, o está interesado en conocer más de Dios,",
+    "welcome": "¡le extenderemos una calurosa bienvenida!"
+  },
+  "latest_video_title" : "Ultimo Video"
 }
