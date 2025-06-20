@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
     <div
-        id="home"
+        id="hero"
         className="w-full h-[100vh]  bg-cover bg-center bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${churchImage})`, alignSelf: 'stretch'}}
     >
@@ -20,11 +20,7 @@ export default function Hero() {
             </h1>
           </AnimateOnScroll>
           <h2 className="text-md">
-            Somos una iglesia fundamental dedicada a la familia. Nuestro
-            propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera
-            que sirve a la población Hispana. Creemos que la Palabra de Dios
-            tiene las respuestas que el hombre necesita, y tratamos de predicar
-            y enseñarla correctamente.
+            {t('who_we_are.description')}
           </h2>
         </div>
         <div className="w-full h-full content-end">

@@ -1,37 +1,43 @@
-import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
-import Logo from '@/components/atoms/Logo.tsx';
-import LanguageSwitcher from '@/components/molecules/LanguageSwitcher.tsx';
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import Logo from "@/components/atoms/Logo.tsx";
+import LanguageSwitcher from "@/components/molecules/LanguageSwitcher.tsx";
 
 function NavBar() {
   const { t } = useTranslation();
 
   return (
-    <div
-      className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
+    <div className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
       <div className="title mx-2 flex-1 flex px-2 items-center">
         <Logo className="w-20 h-20" />
-        {t('siteTitle')}
+        {t("siteTitle")}
       </div>
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
-            <li>
-                <Link to="/#home">{t('menu.home')}</Link>
-            </li>
-            <li>
-                <a href="/#radio">{t('menu.radio')}</a>
-            </li>
-            <li>
-                <a href="/about">{t('menu.aboutUs')}</a>
-            </li>
-            <LanguageSwitcher />
-            <a href="/#donations" className="ml-4 btn bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none">
-                {t('menu.donations')}
-            </a>
+          <li>
+            <Link to="/#home">{t("menu.home")}</Link>
+          </li>
+          <li>
+            <Link to="/#radio">{t("menu.radio")}</Link>
+          </li>
+          <li>
+            <Link to="/about#hero">{t("menu.aboutUs")}</Link>
+          </li>
+          <LanguageSwitcher />
+          <Link
+            to="/#donations"
+            className="ml-4 btn bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none"
+          >
+            {t("menu.donations")}
+          </Link>
         </ul>
       </div>
       <div className="flex-none lg:hidden">
-      <label htmlFor="sidebar" aria-label="open sidebar" className="btn btn-square btn-ghost">
+        <label
+          htmlFor="sidebar"
+          aria-label="open sidebar"
+          className="btn btn-square btn-ghost"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -48,7 +54,7 @@ function NavBar() {
         </label>
       </div>
     </div>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
