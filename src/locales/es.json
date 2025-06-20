@@ -35,7 +35,9 @@
     "activities": "Actividades <br /> de",
     "our_church": "Nuestra Iglesia",
     "support": "Apoya",
-    "our_ministry": "Nuestro Ministerio"
+    "our_ministry": "Nuestro Ministerio",
+    "our": "Nuestra",
+    "history": "Historia"
   },
   "menu": {
     "home": "Inicio",
