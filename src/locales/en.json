@@ -69,5 +69,10 @@
     "description": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic community. We believe that God's Word has the answers people need, and we strive to preach and teach it correctly. If you are looking for a place to gather, or are interested in learning more about God,",
     "welcome": "we warmly welcome you!"
   },
+  "testimonials": {
+    "title": "Testimonials",
+    "bible_msg": "“Blessed are they that keep his testimonies, and that seek him with the whole heart.”",
+    "verse": "Psalm 119:2"
+  },
   "latest_video_title" : "Latest Video"
 }

@@ -74,7 +74,7 @@ export default function LatestYoutubeVideo() {
       {video && !loading && (
         <div className="w-[70vw] px-2">
           <h3 className="font-bold text-lg md:text-xl mb-1">{video.title}</h3>
-          <p className="text-gray-700 text-sm">{video.author}</p>
+          <a href="https://www.youtube.com/@iglesiabautistafundamental9995" className="text-gray-700 text-sm">{video.author}</a>
         </div>
       )}
     </section>
