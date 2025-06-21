@@ -90,7 +90,7 @@ function Footer() {
             {t(`common.followUs`)}
           </h4>
           <a
-            href="#"
+            href="https://www.youtube.com/@iglesiabautistafundamental9995"
             aria-label="Canal de YouTube"
             className="inline-flex items-center justify-center w-10 h-10 border border-gray-400 rounded-full hover:bg-gray-200"
           >

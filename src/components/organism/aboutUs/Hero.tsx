@@ -8,7 +8,7 @@ export default function Hero() {
 
   return (
       <section
-          id="home"
+          id="hero"
           className="w-full h-[100vh]  bg-cover bg-center bg-center flex items-center justify-center"
           style={{backgroundImage: `url(${churchImage})`, alignSelf: 'stretch'}}
       >

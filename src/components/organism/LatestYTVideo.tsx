@@ -1,36 +1,47 @@
 import { useEffect, useState } from "react";
-import { CHANNEL_ID, YOUTUBE_API_KEY } from "@/config/config";
+import { CHANNEL_ID } from "@/config/config";
 import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";
 import { useTranslation } from "react-i18next";
 
 interface VideoInfo {
   videoId: string;
   title: string;
-  description: string;
+  author?: string;
+}
+
+function LoadingVideo() {
+  return (
+    <div className="w-[70vw] aspect-video flex items-center justify-center bg-gray-100 rounded-xl shadow-lg mb-4 animate-pulse">
+      <span className="text-gray-400 text-xl">Cargando video...</span>
+    </div>
+  );
 }
 
 export default function LatestYoutubeVideo() {
   const { t } = useTranslation();
-
   const [video, setVideo] = useState<VideoInfo | null>(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchLatestVideo() {
       try {
-        const res = await fetch(
-          `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${CHANNEL_ID}&part=snippet,id&order=date&maxResults=1`
-        );
+        const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${CHANNEL_ID}`;
+        const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+        const res = await fetch(apiUrl);
         const data = await res.json();
-        const latest = data.items?.[0];
-        if (latest?.id?.videoId) {
+        if (data.items && data.items.length > 0) {
+          const latest = data.items[0];
+          const videoId = latest.link.split("v=")[1];
           setVideo({
-            videoId: latest.id.videoId,
-            title: latest.snippet.title,
-            description: latest.snippet.description,
+            videoId,
+            title: latest.title,
+            author: latest.author || "IGLESIA BAUTISTA FUNDAMENTAL",
           });
         }
       } catch (e) {
-        console.error("Error fetching latest YouTube video:", e);
+        console.error("Error fetching latest YouTube video via rss2json:", e);
+      } finally {
+        setLoading(false);
       }
     }
     fetchLatestVideo();
@@ -46,20 +57,24 @@ export default function LatestYoutubeVideo() {
           <span className="text-orange-400">{latestVideoTitleSplitted[1]}</span>
         </h2>
       </AnimateOnScroll>
-      <div className="rounded-xl overflow-hidden shadow-lg mb-4">
-        <iframe
-          src={video ? `https://www.youtube.com/embed/${video.videoId}` : ""}
-          title="Último video de YouTube"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-[70vw] aspect-video"
-        ></iframe>
-      </div>
-      {video && (
+      {loading ? (
+        <LoadingVideo />
+      ) : (
+        <div className="rounded-xl overflow-hidden shadow-lg mb-4">
+          <iframe
+            src={video ? `https://www.youtube.com/embed/${video.videoId}` : ""}
+            title="Último video de YouTube"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-[70vw] aspect-video"
+          ></iframe>
+        </div>
+      )}
+      {video && !loading && (
         <div className="w-[70vw] px-2">
           <h3 className="font-bold text-lg md:text-xl mb-1">{video.title}</h3>
-          <p className="text-gray-700 text-sm">{video.description}</p>
+          <p className="text-gray-700 text-sm">{video.author}</p>
         </div>
       )}
     </section>
