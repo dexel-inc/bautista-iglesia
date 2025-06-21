@@ -35,7 +35,9 @@
     "activities": "Activities <br /> of",
     "our_church": "Our Church",
     "support": "Support",
-    "our_ministry": "Our Ministry"
+    "our_ministry": "Our Ministry",
+    "our": "Our",
+    "history": "History"
   },
   "menu": {
     "home": "Home",
@@ -68,6 +70,15 @@
     "title": "Who are we?",
     "description": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic community. We believe that God's Word has the answers people need, and we strive to preach and teach it correctly. If you are looking for a place to gather, or are interested in learning more about God,",
     "welcome": "we warmly welcome you!"
+  },
+  "our_pastor": {
+    "our": "Our",
+    "pastor": "Pastor",
+    "description": "Pastor Roberto Goins and his family have dedicated their lives to serving the Lord. They began their ministry in South Carolina, serving the Hispanic community for almost 12 years. In 2005, they gave their lives to Christ, and their calling was strengthened by their cultural connection to Colombia, his wife's country of origin. Today, guided by God, they work in Arizona planting a church centered on the eternal principles of the Word. Their greatest desire is for every person to experience the true peace and joy found only in a relationship with Jesus Christ."
+  },
+  "missionaries": {
+    "missionaries": "Missionaries",
+    "description": "Meet the missionary families who are bringing the Gospel to different regions of the world."
   },
   "latest_video_title" : "Latest Video"
 }

@@ -1,5 +1,5 @@
 import Logo from "@/components/atoms/Logo.tsx";
-import churchImage from "@/assets/church-image.png";
+import churchImage from "../../../public/assets/church-image.png";
 import churchSchedulesJson from "@/services/church_schedules.json";
 import navegation from "@/services/navegation.json";
 import { useTranslation } from "react-i18next";
