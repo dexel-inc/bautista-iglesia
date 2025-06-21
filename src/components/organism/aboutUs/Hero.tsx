@@ -2,7 +2,6 @@ import churchImage from "../../../../public/assets/church-image.png";
 import goinsFamily from "../../../../public/assets/goins-family.png";
 import { useTranslation } from 'react-i18next';
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
-import desiertoImg from "../../../../public/assets/desert-hero-image.png";
 
 export default function Hero() {
   const { t } = useTranslation();
