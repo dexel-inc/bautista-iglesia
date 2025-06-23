@@ -52,7 +52,7 @@ export default function LatestYoutubeVideo() {
   return (
     <section className="w-full flex flex-col items-center p-8 bg-white">
       <AnimateOnScroll animation="animate-fade-down animate-fill-both animate-duration-[2000ms] animate-ease-out">
-        <h2 className="text-4xl font-bold mb-4 text-center title">
+        <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center title">
           {latestVideoTitleSplitted[0]}{" "}
           <span className="text-orange-400">{latestVideoTitleSplitted[1]}</span>
         </h2>
