@@ -1,5 +1,6 @@
 import Carrousel from '../molecules/Carrousel.tsx';
 import AnimateOnScroll from '../molecules/AnimateOnScroll.tsx';
+import { useTranslation } from 'react-i18next';
 
 type Testimony = {
   name: string;
@@ -30,16 +31,20 @@ const testimonies: Testimony[] = [
   },
 ];
 
-export default function Testimonies() {
+export default function Testimonials() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-12 px-4 md:px-16 bg-[#f7f8fa]">
       <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
         <h2 className="title title-color text-4xl font-bold text-center mb-2">
-          Testimonios
+          {t('testimonials.title')}
         </h2>
         <div className="text-center text-gray-600 text-lg mb-8">
-          “Bienaventurados los que guardan sus testimonios, Y con todo el corazón le buscan”<br />
-          <span className="block mt-1 mb-2 text-gray-500 text-base">Salmos 119:2</span>
+          {t('testimonials.bible_msg')}<br />
+          <span className="block mt-1 mb-2 text-gray-500 text-base">
+            {t('testimonials.verse')}
+          </span>
         </div>
       </AnimateOnScroll>
       <Carrousel
