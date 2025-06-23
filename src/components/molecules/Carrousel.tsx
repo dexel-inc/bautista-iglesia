@@ -5,7 +5,7 @@ export type Props = {
   slides: Array<string>;
   lengthWithPageLG: number,
   children: ReactNode,
-  className: string
+  className: string,
 };
 
 export default function Carrousel({slides, lengthWithPageLG, children, className}: Props) {
@@ -13,7 +13,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
   const [currentSlide, setCurrentSlide] = useState(0)
   const [slidesPerView, setSlidesPerView] = useState(1)
 
-  const getSlidesPerView = () => (window.innerWidth >= 1024 ? lengthWithPageLG : 1)
+  const getSlidesPerView = () => (window.innerWidth >= 768 ? lengthWithPageLG : 1)
 
   useEffect(() => {
     const update = () => setSlidesPerView(getSlidesPerView())
@@ -48,10 +48,10 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
 
   return (
     <div className={`relative ${className}`}>
-      <div className="w-full relative min-h-72 overflow-hidden rounded-lg content-center">
+      <div className="w-full relative p-8 overflow-hidden rounded-lg content-center">
         <div
           ref={carouselRef}
-          className="flex snap-x snap-mandatory scroll-smooth transition-transform duration-700 overflow-x-auto hide-scrollbar px-1"
+          className="flex snap-x snap-mandatory scroll-smooth transition-transform duration-700 overflow-x-auto hide-scrollbar p-2"
         >
           {children}
         </div>
@@ -88,7 +88,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
           <path d="m9 18 6-6-6-6" />
         </svg>
       </button>
-      <div className="flex justify-center absolute bottom-3 start-0 end-0 gap-x-2">
+      <div className={`hidden lg:flex justify-center gap-x-2 mt-3`}>
         {Array.from({ length: maxIndex }).map((_, i) => (
           <button
             key={i}
