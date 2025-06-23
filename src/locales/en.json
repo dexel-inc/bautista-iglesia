@@ -80,5 +80,24 @@
     "missionaries": "Missionaries",
     "description": "Meet the missionary families who are bringing the Gospel to different regions of the world."
   },
-  "latest_video_title" : "Latest Video"
+  "latest_video_title" : "Latest Video",
+  "services": {
+    "title": "Nuestros Servicios",
+    "sunday": "Domingo 11 A.M.",
+    "thursday": "Jueves 7 P.M.",
+    "email": "Correo electrónico: ibfdea@gmail.com",
+    "phone": "Número de contacto: (520) 840-5633"
+  },
+  "location": {
+    "title": "Mapa",
+    "subtitle": "Y Direcciones",
+    "from_cg_title": "Desde Casa Grande:",
+    "from_cg_desc": "Conduzca hacia el sur por Chuichu Rd. cruce la Trekel Rd. y Thornton Rd. Después de cruzar la S. desde Chuichu a Trekel Rd., doble a la derecha en Hanna Rd. Desde Thornton, doble izquierda en Hanna Rd. La iglesia está en la mitad del camino entre Chuichu Rd. y Thornton Rd. en Hanna Rd.",
+    "from_south_title": "Desde el Sur:",
+    "from_south_desc": "Conduzca hacia el norte por Chuichu Road hacia Casa Grande. Justo antes de cruzar el puente sobre la I-8, doble a la izquierda en Hanna Rd. La iglesia está aproximadamente 1/2 milla a la derecha.",
+    "bible_quote": "\"Escudriñad las Escrituras; porque a vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí.\"",
+    "bible_ref": "Juan 5:39",
+    "address": "18280 West Hanna Road\nCasa Grande, AZ 85193",
+    "view_map": "Ver mapa más grande"
+  }
 }
