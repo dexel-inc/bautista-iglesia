@@ -1,4 +1,4 @@
-import radioImage from "@/assets/radio-image.jpg";
+import radioImage from "../../../public/assets/radio-image.jpg";
 import { useTranslation } from 'react-i18next';
 import { Trans } from 'react-i18next';
 import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";

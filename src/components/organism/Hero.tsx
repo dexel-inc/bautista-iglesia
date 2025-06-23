@@ -1,4 +1,4 @@
-import desiertoImg from "../../assets/desert-hero-image.png";
+import desiertoImg from "../../../public/assets/desert-hero-image.png";
 import { useTranslation } from 'react-i18next';
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
 

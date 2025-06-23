@@ -76,5 +76,14 @@
     "bible_msg": "“Bienaventurados los que guardan sus testimonios, Y con todo el corazón le buscan”",
     "verse": "Salmos 119:2"
   },
+  "our_pastor": {
+    "our": "Nuestro",
+    "pastor": "Pastor",
+    "description": "El pastor Roberto Goins y su familia han dedicado sus vidas al servicio del Señor. Iniciaron su ministerio en Carolina del Sur, sirviendo por casi 12 años a la comunidad hispana. En 2005 entregaron sus vidas a Cristo, y su llamado se fortaleció gracias al vínculo cultural con Colombia, país de origen de su esposa. Hoy, guiados por Dios, trabajan en Arizona plantando una iglesia centrada en los principios eternos de la Palabra. Su mayor deseo es que cada persona conozca la verdadera paz y alegría que solo se hallan en una relación con Jesucristo."
+  },
+  "missionaries": {
+    "missionaries": "Misioneros",
+    "description": "Conozca a las familias misioneras que están llevando el Evangelio a diferentes regiones del mundo."
+  },
   "latest_video_title" : "Ultimo Video"
 }
