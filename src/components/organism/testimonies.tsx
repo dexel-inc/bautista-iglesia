@@ -9,24 +9,24 @@ type Testimony = {
 
 const testimonies: Testimony[] = [
   {
-    name: "John Doe",
-    text: `Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Leo in cursus enim magnis ante. Leo in cursuso.`,
-    avatar: "/avatars/john-doe.jpg",
+    name: "Lucía Fernández",
+    text: `La iglesia ha sido un refugio para mi familia. Aquí aprendimos a confiar en el Señor y a apoyarnos mutuamente. Los estudios bíblicos y la comunión nos han acercado más a Dios y entre nosotros.`,
+    avatar: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=256&h=256&facepad=2",
   },
   {
-    name: "John Doe",
-    text: `Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Leo in cursus enim magnis ante. Leo in cursuso.`,
-    avatar: "/avatars/john-doe.jpg",
+    name: "Javier Morales",
+    text: `Agradezco a Dios por cada predicación y por los hermanos que me animan. He visto cómo Dios transforma vidas y restaura corazones. La iglesia es mi segunda casa y un lugar donde siempre encuentro paz.`,
+    avatar: "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=256&h=256&facepad=2",
   },
   {
-    name: "John Doe",
-    text: `Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Leo in cursus enim magnis ante. Leo in cursuso.`,
-    avatar: "/avatars/john-doe.jpg",
+    name: "María González",
+    text: `Doy gracias a Dios por la iglesia, donde encontré una familia espiritual. Cada mensaje fortalece mi fe y me anima a seguir adelante. He visto respuestas a mis oraciones y he crecido mucho en mi relación con Cristo.`,
+    avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2",
   },
   {
-    name: "John Doe",
-    text: `Lorem ipsum dolor sit amet consectetur. Tortor massa nisl quam sit. Vitae congue ultrices neque penatibus mi in quisque. Leo in cursus enim magnis ante. Leo in cursus enim magnis ante. Leo in cursuso.`,
-    avatar: "/avatars/john-doe.jpg",
+    name: "Carlos Ramírez",
+    text: `Desde que llegué a la iglesia, mi vida cambió. El amor y la enseñanza bíblica me han ayudado a superar momentos difíciles. Ahora sirvo con alegría y he encontrado propósito en servir a Dios y a los demás.`,
+    avatar: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2",
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Testimonies() {
           <div
             key={i}
             className="
-              snap-center shrink-0 px-5
+              snap-center shrink-0 px-1 md:px-5
               flex items-center justify-center h-full
               w-full
               md:max-w-[280px] md:min-w-[300px]
