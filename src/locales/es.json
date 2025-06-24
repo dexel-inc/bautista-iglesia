@@ -71,6 +71,11 @@
     "description": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana. Creemos que la Palabra de Dios tiene las respuestas que el hombre necesita, y tratamos de predicar y enseñarla correctamente. Si está buscando un lugar de congregarse, o está interesado en conocer más de Dios,",
     "welcome": "¡le extenderemos una calurosa bienvenida!"
   },
+  "testimonials": {
+    "title": "Testimonios",
+    "bible_msg": "“Bienaventurados los que guardan sus testimonios, Y con todo el corazón le buscan”",
+    "verse": "Salmos 119:2"
+  },
   "our_pastor": {
     "our": "Nuestro",
     "pastor": "Pastor",

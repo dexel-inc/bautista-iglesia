@@ -6,6 +6,7 @@ import Radio from '@/components/organism/Radio.tsx';
 import LatestYoutubeVideo from "@/components/organism/LatestYTVideo";
 import LocationSection from "@/components/organism/LocationSection";
 import Services from "@/components/organism/services";
+import Testimonials from "@/components/organism/testimonials";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Services />
       <LocationSection />
       <LatestYoutubeVideo />
+      <Testimonials />
       <Radio/>
       <DonationSection />
 
