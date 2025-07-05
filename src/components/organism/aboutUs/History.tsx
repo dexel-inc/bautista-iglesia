@@ -24,7 +24,7 @@ export default function History() {
                   <AnimateOnScroll
                       animation="animate-fade-right md:animate-fade-left animate-fill-both animate-duration-[2000ms] animate-ease-out">
                       <h2 className="title title-color text-center md:text-left text-4xl md:text-6xl font-bold mb-4">
-                          {t('common.our')} <span className="text-orange-500 font-bold">{t('common.history')}</span>
+                          {t('common.our')} <span className="text-primary-500 font-bold">{t('common.history')}</span>
                       </h2>
                   </AnimateOnScroll>
                   <p className="text-color text-md md:text-lg leading-relaxed">

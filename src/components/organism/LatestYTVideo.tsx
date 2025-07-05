@@ -54,7 +54,7 @@ export default function LatestYoutubeVideo() {
       <AnimateOnScroll animation="animate-fade-down animate-fill-both animate-duration-[2000ms] animate-ease-out">
         <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center title">
           {latestVideoTitleSplitted[0]}{" "}
-          <span className="text-orange-400">{latestVideoTitleSplitted[1]}</span>
+          <span className="text-primary-500">{latestVideoTitleSplitted[1]}</span>
         </h2>
       </AnimateOnScroll>
       {loading ? (

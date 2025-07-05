@@ -35,7 +35,7 @@ function Radio() {
 
                         <a
                             href="https://radiolavoz.net/listen/"
-                            className="hidden md:inline-block bg-orange-500 hover:bg-orange-600 text-center text-white font-semibold px-6 py-3 rounded-xl"
+                            className="hidden md:inline-block bg-primary-500 hover:bg-primary-600 text-center text-white font-semibold px-6 py-3 rounded-xl"
                         >
                             {t("radio.button")}
                         </a>
@@ -54,12 +54,11 @@ function Radio() {
 
                         <a
                             href="https://radiolavoz.net/listen/"
-                            className="block md:hidden w-full bg-orange-500 hover:bg-orange-600 text-center text-white font-semibold px-6 py-3 rounded-xl"
+                            className="block md:hidden w-full bg-primary-500 hover:bg-primary-600 text-center text-white font-semibold px-6 py-3 rounded-xl"
                         >
                             {t("radio.button")}
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>

@@ -11,7 +11,7 @@ const DonationSection = () => {
         <div className="flex-1 text-center lg:text-left">
           <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
             <h2 className="text-3xl md:text-4xl font-bold title title-color mb-6">
-              { t('common.support') } <span className="text-orange-500">{ t('common.our_ministry') }</span>
+              { t('common.support') } <span className="text-primary-500">{ t('common.our_ministry') }</span>
             </h2>
           </AnimateOnScroll>
 

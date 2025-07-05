@@ -95,7 +95,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
             onClick={() => scrollToSlide(i)}
             className={`size-3 border rounded-full cursor-pointer
               ${i === currentSlide
-              ? 'bg-orange-500 border-orange-500'
+              ? 'bg-primary-500 border-primary-500'
               : 'border-gray-400'
             }`}
           />
