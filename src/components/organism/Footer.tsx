@@ -33,7 +33,7 @@ function Footer() {
             />
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-600 text-white font-semibold px-6 py-3 rounded-xl"
+              className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl"
             >
               {t("footer.subscribe")}
             </button>

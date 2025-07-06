@@ -69,7 +69,11 @@
   "who_we_are": {
     "title": "¿Quienes somos?",
     "description": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana. Creemos que la Palabra de Dios tiene las respuestas que el hombre necesita, y tratamos de predicar y enseñarla correctamente. Si está buscando un lugar de congregarse, o está interesado en conocer más de Dios,",
-    "welcome": "¡le extenderemos una calurosa bienvenida!"
+    "welcome": "¡le extenderemos una calurosa bienvenida!",
+    "come_soon": "¡Ven pronto!",
+    "title_hispanic": "Alcanzando Al Mundo Hispano",
+    "for_christ": "Para Cristo",
+    "description_hispanic": "¿Andas buscando en este mundo, en los vicios, en el dinero, la paz que solo Dios puede dar? <br/> <strong className=\"font-extrabold\"> ¡Cristo es la respuesta!</strong> Te invitamos a nuestra iglesia. Somos una Iglesia que entiende las necesidades de la comunidad hispana. Somos una Iglesia Bautista Fundamental e independiente, que predica y practica la Palabra de Dios, predicada y enseñada en español. No importa si eres joven o adulto. Estamos seguros que descubrirás gente amigable y una calurosa bienvenida cuando visites nuestra iglesia."
   },
   "testimonials": {
     "title": "Testimonios",
@@ -85,5 +89,22 @@
     "missionaries": "Misioneros",
     "description": "Conozca a las familias misioneras que están llevando el Evangelio a diferentes regiones del mundo."
   },
-  "latest_video_title" : "Ultimo Video"
+  "latest_video_title" : "Ultimo Video",
+  "salvation": {
+    "title": "¿Puede alguien saber con seguridad que irá al Cielo cuando muera?",
+    "intro": "Una pregunta profunda con una respuesta que puede cambiar tu eternidad.",
+    "content": "Es una pregunta difícil. Si pensamos solo por lo que podemos ver con nuestros ojos, nadie puede saber realmente hasta que esté muerto. Pero no todo lo que existe realmente se debe ver para saber que existe. Ejercemos nuestra fe todos los días. Por fe salimos de nuestra casa confiando que habrá oxígeno para respirar, aunque no lo vemos; si no, entonces todos traeríamos nuestro tanque de oxígeno. Por fe aceptamos que lo que nos sirven en el restaurante está limpio y comestible, aceptamos por la palabra del que nos vende los tacos. Entonces la fe es esencial para toda nuestra existencia. ¿Por qué es tan difícil creer lo que Dios dice en Su Palabra? Él nos dice cómo podemos tener seguridad de ir al cielo cuando muramos.",
+    "points": {
+      "1_title": "1. Reconocer que somos pecadores",
+      "1_text": "Romanos 3:10 dice: “Como está escrito: No hay justo, ni aun uno.”",
+      "2_title": "2. Cristo es quien nos puede salvar",
+      "2_text": "Romanos 5:8 dice: “Mas Dios muestra su amor para con nosotros, en que siendo aun pecadores, Cristo murió por nosotros.”",
+      "3_title": "3. El pecado nos separa de Dios",
+      "3_text": "Romanos 3:23 dice: “por cuanto todos pecaron, y están destituidos de la gloria de Dios.”",
+      "4_title": "4. Confiar en Cristo",
+      "4_text": "Juan 1:12: “Mas a todos los que le recibieron...”, Romanos 10:13: “Porque todo aquel que invocare el nombre del Señor, será salvo.”"
+    },
+    "call_to_action": "Tú puedes ser salvo ahora mismo.",
+    "verse": "1 Juan 5:13 dice: “Estas cosas os he escrito... para que sepáis que tenéis vida eterna.”"
+  }
 }

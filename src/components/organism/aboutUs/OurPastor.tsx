@@ -12,7 +12,7 @@ export default function OurPastor() {
                   <AnimateOnScroll
                       animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
                       <h2 className="title title-color text-4xl md:text-6xl font-bold mb-4">
-                          { t('our_pastor.our')} <span className="text-orange-500 font-bold">{ t('our_pastor.pastor')}</span>
+                          { t('our_pastor.our')} <span className="text-primary-500 font-bold">{ t('our_pastor.pastor')}</span>
                       </h2>
                   </AnimateOnScroll>
                   <div className="w-full flex justify-center">

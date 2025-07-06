@@ -26,7 +26,7 @@ function NavBar() {
           <LanguageSwitcher />
           <Link
             to="/#donations"
-            className="ml-4 btn bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none"
+            className="ml-4 btn bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none"
           >
             {t("menu.donations")}
           </Link>

@@ -56,10 +56,24 @@ const MissionaryModal = ({ missionary, onClose, isModalOpen }: MissionaryModalPr
             onClose={onClose}
         >
             <div
-                className={`modal-box p-0 transition-all duration-300 ease-in-out transform ${
-                    isModalOpen ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-4 scale-95'
-                }`}
+                className={`
+        modal-box p-0 transition-all duration-300 ease-in-out transform
+        ${isModalOpen
+                    ? 'translate-y-0 md:scale-100 opacity-100'
+                    : 'translate-y-full md:translate-y-4 md:scale-95 opacity-0'}
+      `}
             >
+                <div className="absolute top-0 right-0 p-2">
+                    <form method="dialog">
+                        <button className="btn btn-link hover:bg-gray-100 radio-xl fill-gray-800 text-gray-800 w-8 h-8">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                                <path
+                                    d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
                 {!loaded && (
                     <div className="absolute inset-0 flex items-center justify-center h-120 bg-gray-300 rounded-sm">
                         <svg className="w-10 h-10 text-gray-200 dark:text-gray-600" xmlns="http://www.w3.org/2000/svg"
@@ -76,11 +90,6 @@ const MissionaryModal = ({ missionary, onClose, isModalOpen }: MissionaryModalPr
                     onLoad={() => setLoaded(true)}
                     className={`w-full h-full object-contain transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'} max-h-120 rounded`}
                 />
-
-                <div className="p-4">
-                    <h3 className="text-xl font-bold">{missionary.name}</h3>
-                    <p className="py-2 text-sm text-gray-600 leading-relaxed">{missionary.description}</p>
-                </div>
             </div>
             <form method="dialog" className="modal-backdrop">
                 <button>close</button>

@@ -3,19 +3,19 @@
   "footer": {
     "subscribe_desc": "Subscribe to receive news about our upcoming events",
     "subscribe": "Subscribe",
-    "short_desc": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic population.",
-    "copyright": "© {{year}}. All Rights Reserved. Dexel inc"
+    "short_desc": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church that serves the Hispanic population.",
+    "copyright": "© {{year}}. All rights reserved. Dexel Inc"
   },
   "common": {
     "read_more": "Read more",
     "schedules": "Schedules",
     "navegation": "Navigation",
-    "week_days":{
+    "week_days": {
       "thursday": "Thursday",
       "sunday": "Sunday"
     },
     "followUs": "Follow us",
-    "hero_msg": "Come, all you who are thirsty...",
+    "hero_msg": "All who are thirsty, come…",
     "languages": {
       "EN": "English",
       "ES": "Spanish"
@@ -68,8 +68,12 @@
   },
   "who_we_are": {
     "title": "Who are we?",
-    "description": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church serving the Hispanic community. We believe that God's Word has the answers people need, and we strive to preach and teach it correctly. If you are looking for a place to gather, or are interested in learning more about God,",
-    "welcome": "we warmly welcome you!"
+    "description": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church that serves the Hispanic population. We believe that the Word of God has the answers mankind needs, and we strive to preach and teach it correctly. If you are looking for a place to congregate or are interested in knowing more about God,",
+    "welcome": "we will extend to you a warm welcome!",
+    "come_soon": "Come soon!",
+    "title_hispanic": "Reaching the Hispanic World",
+    "for_christ": "For Christ",
+    "description_hispanic": "Are you searching in this world, in vices, in money, for the peace that only God can give? <br/> <strong className=\"font-extrabold\"> Christ is the answer!</strong> We invite you to our church. We are a church that understands the needs of the Hispanic community. We are a Fundamental and Independent Baptist Church that preaches and practices the Word of God, preached and taught in Spanish. It doesn't matter if you are young or an adult. We are sure you will find friendly people and a warm welcome when you visit our church."
   },
   "testimonials": {
     "title": "Testimonials",
@@ -79,11 +83,11 @@
   "our_pastor": {
     "our": "Our",
     "pastor": "Pastor",
-    "description": "Pastor Roberto Goins and his family have dedicated their lives to serving the Lord. They began their ministry in South Carolina, serving the Hispanic community for almost 12 years. In 2005, they gave their lives to Christ, and their calling was strengthened by their cultural connection to Colombia, his wife's country of origin. Today, guided by God, they work in Arizona planting a church centered on the eternal principles of the Word. Their greatest desire is for every person to experience the true peace and joy found only in a relationship with Jesus Christ."
+    "description": "Pastor Roberto Goins and his family have dedicated their lives to the service of the Lord. They began their ministry in South Carolina, serving the Hispanic community for almost 12 years. In 2005 they gave their lives to Christ, and their calling was strengthened thanks to the cultural connection with Colombia, the country of origin of his wife. Today, guided by God, they work in Arizona planting a church centered on the eternal principles of the Word. Their greatest desire is for every person to know the true peace and joy that can only be found in a relationship with Jesus Christ."
   },
   "missionaries": {
     "missionaries": "Missionaries",
-    "description": "Meet the missionary families who are bringing the Gospel to different regions of the world."
+    "description": "Meet the missionary families who are taking the Gospel to different regions of the world."
   },
   "latest_video_title" : "Latest Video",
   "services": {
@@ -104,5 +108,22 @@
     "bible_ref": "Juan 5:39",
     "address": "18280 West Hanna Road\nCasa Grande, AZ 85193",
     "view_map": "Ver mapa más grande"
+  },
+  "salvation": {
+    "title": "Can someone know for sure they will go to Heaven when they die?",
+    "intro": "A deep question with an answer that can change your eternity.",
+    "content": "It’s a difficult question. If we think only based on what we can see with our eyes, no one can truly know until they are dead. But not everything that exists must be seen to know it is real. We exercise our faith every day. By faith, we leave our house trusting there will be oxygen to breathe, even though we don’t see it; otherwise, we would all carry an oxygen tank. By faith, we trust that the food served at a restaurant is clean and edible, accepting it based on the word of the one who sells us the tacos. Faith is essential to our entire existence. Why is it so hard to believe what God says in His Word? He tells us how we can be sure we are going to Heaven when we die.",
+    "points": {
+      "1_title": "1. Recognize that we are sinners",
+      "1_text": "Romans 3:10 says: “As it is written: There is none righteous, not even one.”",
+      "2_title": "2. Christ is the one who can save us",
+      "2_text": "Romans 5:8 says: “But God shows His love for us in that while we were still sinners, Christ died for us.”",
+      "3_title": "3. Sin separates us from God",
+      "3_text": "Romans 3:23 says: “For all have sinned and fall short of the glory of God.”",
+      "4_title": "4. Trust in Christ",
+      "4_text": "John 1:12: “But to all who did receive Him...”, Romans 10:13: “For everyone who calls on the name of the Lord will be saved.”"
+    },
+    "call_to_action": "You can be saved right now.",
+    "verse": "1 John 5:13 says: “I write these things to you… that you may know that you have eternal life.”"
   }
 }
