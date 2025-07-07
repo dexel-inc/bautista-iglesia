@@ -19,7 +19,7 @@ export default function SalvationSection() {
                     </div>
 
                     <div className="text-base md:text-lg text-justify p-6 md:p-10 text-gray-800">
-                        {t("salvation.contenido")}
+                        {t("salvation.content")}
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-8">
