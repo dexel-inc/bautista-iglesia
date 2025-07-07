@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import GoogleLocation from "../molecules/googleLocation";
 import churchMapImg from "../../../public/assets/church-map.png";
+import churchInfo from "@/services/churchInfo.json";
 
 export default function LocationSection() {
   const { t } = useTranslation();
@@ -63,10 +64,10 @@ export default function LocationSection() {
       {/* Google Location Component */}
       <div className="md:hidden px-6 pb-6">
         <GoogleLocation
-          address="18280 West Hanna Road, Casa Grande, AZ 85193"
-          addressLines={["18280 West Hanna Road", "Casa Grande, AZ 85193"]}
-          mapSrc="https://www.google.com/maps/embed?pb=!4v1750725108935!6m8!1m7!1sT-MKqqhvqFqLvfWyXRKHHw!2m2!1d32.82112299886159!2d-111.7640817267689!3f2.795407112700985!4f-4.549326345646449!5f0.5391086248981372"
-          mapLink="https://maps.app.goo.gl/kw1xuyWZpGjtuUui7"
+          address={churchInfo.address}
+          addressLines={churchInfo.addressLines}
+          mapSrc={churchInfo.mapSrc}
+          mapLink={churchInfo.mapLink}
         />
       </div>
     </section>
