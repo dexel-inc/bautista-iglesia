@@ -3,8 +3,6 @@ import churchSchedulesJson from "@/services/church_schedules.json";
 
 interface ServicesBannerProps {
   backgroundImage: string;
-  address: string;
-  addressLines: string[];
   mapSrc: string;
   mapLink: string;
   className?: string;

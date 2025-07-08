@@ -43,7 +43,7 @@ export default function LocationSection() {
           <div className="mt-6 md:mt-0">
             <img
               src={churchMapImg}
-              alt="Mapa esquemático de ubicación de la iglesia"
+              alt="Church Map"
               className="w-full h-auto rounded-lg shadow-md"
             />
           </div>
