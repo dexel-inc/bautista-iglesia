@@ -43,7 +43,7 @@ export default function ChurchActivities() {
   return (
     <section className="py-12 mx-16">
       <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
-        <h2 className="title title-color text-4xl font-bold">
+        <h2 className="title title-color text-4xl md:text-6xl font-bold">
           <Trans i18nKey="common.activities" /> <span className="text-primary-500">{t('common.our_church')}</span>
         </h2>
       </AnimateOnScroll>

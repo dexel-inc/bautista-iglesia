@@ -6,7 +6,7 @@ const DonationSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="donations" className="px-4 bg-white">
+    <section id="donations" className="px-6 bg-white">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between">
         <div className="flex-1 text-center lg:text-left">
           <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">

@@ -35,7 +35,7 @@ export default function Testimonials() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-12 px-4 md:px-16 bg-[#f7f8fa]">
+    <section className="py-12 px-6 md:px-16 bg-[#f7f8fa]">
       <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
         <h2 className="title title-color text-4xl font-bold text-center mb-2">
           {t('testimonials.title')}

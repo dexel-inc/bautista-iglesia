@@ -52,7 +52,7 @@ export default function LatestYoutubeVideo() {
   return (
     <section className="w-full flex flex-col items-center p-8 bg-white">
       <AnimateOnScroll animation="animate-fade-down animate-fill-both animate-duration-[2000ms] animate-ease-out">
-        <h2 className="text-4xl md:text-6xl font-bold mb-4 text-center title">
+        <h2 className="text-4xl md:text-6xl font-bold mb-4 md:mb-8 text-center title">
           {latestVideoTitleSplitted[0]}{" "}
           <span className="text-primary-500">{latestVideoTitleSplitted[1]}</span>
         </h2>
@@ -67,12 +67,12 @@ export default function LatestYoutubeVideo() {
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            className="w-[70vw] aspect-video"
+            className="w-[90vw] lg:w-[60vw] aspect-video "
           ></iframe>
         </div>
       )}
       {video && !loading && (
-        <div className="w-[70vw] px-2">
+        <div className="w-[90vw] lg:w-[60vw] px-2">
           <h3 className="font-bold text-lg md:text-xl mb-1">{video.title}</h3>
           <a href="https://www.youtube.com/@iglesiabautistafundamental9995" className="text-gray-700 text-sm">{video.author}</a>
         </div>

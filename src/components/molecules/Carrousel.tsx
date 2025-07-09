@@ -48,7 +48,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
 
   return (
     <div className={`relative ${className}`}>
-      <div className="w-full relative p-8 overflow-hidden rounded-lg content-center">
+      <div className="w-full relative p-6 overflow-hidden rounded-lg content-center">
         <div
           ref={carouselRef}
           className="flex snap-x snap-mandatory scroll-smooth transition-transform duration-700 overflow-x-auto hide-scrollbar p-2"

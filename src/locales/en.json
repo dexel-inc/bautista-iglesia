@@ -89,7 +89,26 @@
     "missionaries": "Missionaries",
     "description": "Meet the missionary families who are taking the Gospel to different regions of the world."
   },
-  "latest_video_title": "Latest Video",
+  "latest_video_title" : "Latest Video",
+  "services": {
+    "title": "Our Services",
+    "sunday": "Sunday 11 A.M.",
+    "thursday": "Thursday 7 P.M.",
+    "email": "Mail: ibfdea@gmail.com",
+    "phone": "Phone number: (520) 840-5633"
+  },
+  "location": {
+    "title": "Map",
+    "subtitle": "And Directions",
+    "from_cg_title": "From Casa Grande:",
+    "from_cg_desc": "Drive south on Chuichu Rd. cross Trekel Rd. and Thornton Rd. After crossing S. from Chuichu to Trekel Rd., turn right on Hanna Rd. From Thornton, turn left on Hanna Rd. The church is halfway between Chuichu Rd. and Thornton Rd. on Hanna Rd.",
+    "from_south_title": "From the South:",
+    "from_south_desc": "Drive north on Chuichu Road toward Casa Grande. Just before crossing the bridge over I-8, turn left on Hanna Rd. The church is approximately 1/2 mile on the right.",
+    "bible_quote": "\"Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me.\"",
+    "bible_ref": "John 5:39",
+    "address": "18280 West Hanna Road\nCasa Grande, AZ 85193",
+    "view_map": "View larger map"
+  },
   "salvation": {
     "title": "Can someone know for sure they will go to Heaven when they die?",
     "intro": "A deep question with an answer that can change your eternity.",
