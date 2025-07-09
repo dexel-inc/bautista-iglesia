@@ -33,8 +33,6 @@ export default function Services() {
       <section className="hidden md:block my-8 mx-auto max-w-6xl px-6">
         <ServicesBanner
           backgroundImage={churchImage}
-          address={churchInfo.address}
-          addressLines={churchInfo.addressLines}
           mapSrc={churchInfo.mapSrc}
           mapLink={churchInfo.mapLink}
         />
