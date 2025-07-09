@@ -20,7 +20,7 @@ export default function ServicesBanner({
 
   return (
     <div 
-      className={`relative rounded-lg overflow-hidden min-h-[400px] flex items-center ${className}`}
+      className={`relative rounded-lg overflow-hidden flex items-center max-w-6xl md:p-5 lg:p-10 mx-auto ${className}`}
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${backgroundImage})`,
         backgroundSize: "cover",
