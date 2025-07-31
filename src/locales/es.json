@@ -15,7 +15,7 @@
       "sunday": "Domingo"
     },
     "followUs": "Siguenos",
-    "hero_msg": "A todos los sedientos venid…",
+    "hero_msg": "A todos los sedientos: venid…",
     "languages": {
       "EN": "Inglés",
       "ES": "Español"
@@ -47,7 +47,7 @@
   },
   "radio": {
     "title": "Dios Te Quiere Hablar",
-    "description": "Te invitamos a conocer nuestra emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
+    "description": "Te invitamos a conocer la emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
     "button": "Escúchanos ahora",
     "schedule": "Lunes - Viernes 6/7 Hora de Az<br/>9 a.m / p.m EST"
   },
@@ -83,7 +83,7 @@
   "our_pastor": {
     "our": "Nuestro",
     "pastor": "Pastor",
-    "description": "El pastor Roberto Goins y su familia han dedicado sus vidas al servicio del Señor. Iniciaron su ministerio en Carolina del Sur, sirviendo por casi 12 años a la comunidad hispana. En 2005 entregaron sus vidas a Cristo, y su llamado se fortaleció gracias al vínculo cultural con Colombia, país de origen de su esposa. Hoy, guiados por Dios, trabajan en Arizona plantando una iglesia centrada en los principios eternos de la Palabra. Su mayor deseo es que cada persona conozca la verdadera paz y alegría que solo se hallan en una relación con Jesucristo."
+    "description": "El pastor Roberto Goins y su familia han dedicado sus vidas al servicio del Señor. Iniciaron su ministerio en Carolina del Sur, sirviendo por casi 12 años a la comunidad hispana. En 2005 entregaron sus vidas a Cristo, y su llamado se fortaleció gracias al vínculo cultural con Colombia, país de origen de su esposa. Hoy, guiados por Dios, trabajan en Arizona plantando una iglesia centrada en los principios eternos de la Palabra. Su mayor deseo es que cada persona conozca la verdadera paz y alegría que solo se hallan en una relación con Jesucristo. Su mayor deseo es que cada persona reconozca su condición espiritual delante de Dios y reciba el perdón y el regalo de la Salvación por medio de Jesucristo; por tanto, conozca la verdadera paz y alegría que solo se puede encontrar en Él."
   },
   "missionaries": {
     "missionaries": "Misioneros",
@@ -94,14 +94,14 @@
     "title": "Nuestros Servicios",
     "sunday": "Domingo 11 A.M.",
     "thursday": "Jueves 7 P.M.",
-    "email": "Correo electrónico: ibfdea@gmail.com",
+    "email": "Correo electrónico: ibfdeaz@gmail.com",
     "phone": "Número de contacto: (520) 840-5633"
   },
   "location": {
     "title": "Mapa",
     "subtitle": "Y Direcciones",
     "from_cg_title": "Desde Casa Grande:",
-    "from_cg_desc": "Conduzca hacia el sur por Chuichu Rd. cruce la Trekel Rd. y Thornton Rd. Después de cruzar la S. desde Chuichu a Trekel Rd., doble a la derecha en Hanna Rd. Desde Thornton, doble izquierda en Hanna Rd. La iglesia está en la mitad del camino entre Chuichu Rd. y Thornton Rd. en Hanna Rd.",
+    "from_cg_desc": "Conduzca hacia el sur por Chuichu Rd, Trekell Rd. o Thornton Rd. Después de cruzar I-8, desde Chuichu o Trekell Rd, doble a la derecha en Hanna Rd. Desde Thornton, doble a la izquierda en Hanna Rd. La iglesia está en la mitad del camino entre Chuichu Rd. y Thornton Rd. en Hanna Rd.",
     "from_south_title": "Desde el Sur:",
     "from_south_desc": "Conduzca hacia el norte por Chuichu Road hacia Casa Grande. Justo antes de cruzar el puente sobre la I-8, doble a la izquierda en Hanna Rd. La iglesia está aproximadamente 1/2 milla a la derecha.",
     "bible_quote": "\"Escudriñad las Escrituras; porque a vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí.\"",
@@ -110,18 +110,18 @@
     "view_map": "Ver mapa más grande"
   },
   "salvation": {
-    "title": "¿Puede alguien saber con seguridad que irá al Cielo cuando muera?",
+    "title": "¿Puede alguien saber con seguridad donde pasará la eternidad al morir?",
     "intro": "Una pregunta profunda con una respuesta que puede cambiar tu eternidad.",
-    "content": "Es una pregunta difícil. Si pensamos solo por lo que podemos ver con nuestros ojos, nadie puede saber realmente hasta que esté muerto. Pero no todo lo que existe realmente se debe ver para saber que existe. Ejercemos nuestra fe todos los días. Por fe salimos de nuestra casa confiando que habrá oxígeno para respirar, aunque no lo vemos; si no, entonces todos traeríamos nuestro tanque de oxígeno. Por fe aceptamos que lo que nos sirven en el restaurante está limpio y comestible, aceptamos por la palabra del que nos vende los tacos. Entonces la fe es esencial para toda nuestra existencia. ¿Por qué es tan difícil creer lo que Dios dice en Su Palabra? Él nos dice cómo podemos tener seguridad de ir al cielo cuando muramos.",
+    "content": "Es una pregunta difícil. Si pensamos solo por lo que podemos ver con nuestros ojos, nadie puede saber realmente hasta que esté muerto. Pero no todo lo que existe realmente se debe ver para saber que existe. Ejercemos nuestra fe todos los días. Por fe salimos de nuestra casa confiando que habrá oxígeno para respirar, aunque no lo vemos; si no, entonces todos traeríamos nuestro tanque de oxígeno. Por fe aceptamos que lo que nos sirven en el restaurante está limpio y comestible, aceptamos por la palabra del que nos vende los alimentos. Entonces la fe es esencial para toda nuestra existencia. ¿Por qué es tan difícil creer lo que Dios dice en Su Palabra? Él nos dice cómo podemos tener seguridad de ir al cielo cuando muramos.",
     "points": {
       "1_title": "1. Reconocer que somos pecadores",
       "1_text": "Romanos 3:10 dice: “Como está escrito: No hay justo, ni aun uno.”",
-      "2_title": "2. Cristo es quien nos puede salvar",
+      "2_title": "2. Reconocer que el pecado nos separa de Dios",
       "2_text": "Romanos 5:8 dice: “Mas Dios muestra su amor para con nosotros, en que siendo aun pecadores, Cristo murió por nosotros.”",
-      "3_title": "3. El pecado nos separa de Dios",
-      "3_text": "Romanos 3:23 dice: “por cuanto todos pecaron, y están destituidos de la gloria de Dios.”",
-      "4_title": "4. Confiar en Cristo",
-      "4_text": "Juan 1:12: “Mas a todos los que le recibieron...”, Romanos 10:13: “Porque todo aquel que invocare el nombre del Señor, será salvo.”"
+      "3_title": "3. Reconocer que solamente Cristo nos puede salvar",
+      "3_text": "Hechos 4:12 dice: “Y en ningún otro hay salvación; porque no hay otro nombre bajo el cielo, dado a los hombres, en que podamos ser salvos.”",
+      "4_title": "4. Poner nuestra fe y confianza en Cristo y Su obra en la cruz",
+      "4_text": "Romanos 10:13 dice: “Porque todo aquel que invocare el nombre del Señor, será salvo.”"
     },
     "call_to_action": "Tú puedes ser salvo ahora mismo.",
     "verse": "1 Juan 5:13 dice: “Estas cosas os he escrito... para que sepáis que tenéis vida eterna.”"

@@ -37,13 +37,13 @@ const DonationSection = () => {
                   { t('common.inputs.name.field') }:
                 </p>
                 <p className="mb-2 text-sm">
-                  [Nombre del receptor]
+                  IBF CASA GRANDE
                 </p>
                 <p className="text-sm font-semibold title-color">
                   { t('common.inputs.email.field') }:
                 </p>
                 <p className="mb-2 text-sm">
-                  ibfdeaz@gmail.com
+                  {t("services.email")}
                 </p>
 
                 <p className="text-sm font-semibold title-color">

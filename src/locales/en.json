@@ -47,7 +47,7 @@
   },
   "radio": {
     "title": "God Wants to Talk to You",
-    "description": "We invite you to discover our Christian radio station, The Voice, a ministry of the Berea Fundamental Baptist Church dedicated to faithfully proclaiming the gospel of Jesus Christ through preaching sound doctrine and music that exalts the Lord.",
+    "description": "We invite you to discover the Christian radio station, The Voice, a ministry of the Berea Fundamental Baptist Church dedicated to faithfully proclaiming the gospel of Jesus Christ through preaching sound doctrine and music that exalts the Lord.",
     "button": "Listen to us now",
     "schedule": "Monday - Friday 6/7 AZ Time <br/>9 a.m. / p.m. EST"
   },
@@ -83,7 +83,7 @@
   "our_pastor": {
     "our": "Our",
     "pastor": "Pastor",
-    "description": "Pastor Roberto Goins and his family have dedicated their lives to the service of the Lord. They began their ministry in South Carolina, serving the Hispanic community for almost 12 years. In 2005 they gave their lives to Christ, and their calling was strengthened thanks to the cultural connection with Colombia, the country of origin of his wife. Today, guided by God, they work in Arizona planting a church centered on the eternal principles of the Word. Their greatest desire is for every person to know the true peace and joy that can only be found in a relationship with Jesus Christ."
+    "description": "Pastor Roberto Goins and his family have dedicated their lives to the service of the Lord. They began their ministry in South Carolina, serving the Hispanic community for almost 12 years. In 2005 they gave their lives to Christ, and their calling was strengthened thanks to the cultural connection with Colombia, the country of origin of his wife. Today, guided by God, they work in Arizona planting a church centered on the eternal principles of the Word. Their greatest desire is for every person to recognize their spiritual condition before God and receive forgiveness and the gift of Salvation through Jesus Christ; therefore, to know the true peace and joy that can only be found in Him."
   },
   "missionaries": {
     "missionaries": "Missionaries",
@@ -94,14 +94,14 @@
     "title": "Our Services",
     "sunday": "Sunday 11 A.M.",
     "thursday": "Thursday 7 P.M.",
-    "email": "Mail: ibfdea@gmail.com",
+    "email": "Mail: ibfdeaz@gmail.com",
     "phone": "Phone number: (520) 840-5633"
   },
   "location": {
     "title": "Map",
     "subtitle": "And Directions",
     "from_cg_title": "From Casa Grande:",
-    "from_cg_desc": "Drive south on Chuichu Rd. cross Trekel Rd. and Thornton Rd. After crossing S. from Chuichu to Trekel Rd., turn right on Hanna Rd. From Thornton, turn left on Hanna Rd. The church is halfway between Chuichu Rd. and Thornton Rd. on Hanna Rd.",
+    "from_cg_desc": "Drive south on Chuichu Rd, Trekell Rd. or Thornton Rd. After crossing I-8, from Chuichu or Trekell Rd, turn right on Hanna Rd. From Thornton, turn left on Hanna Rd. The church is halfway between Chuichu Rd. and Thornton Rd. on Hanna Rd.",
     "from_south_title": "From the South:",
     "from_south_desc": "Drive north on Chuichu Road toward Casa Grande. Just before crossing the bridge over I-8, turn left on Hanna Rd. The church is approximately 1/2 mile on the right.",
     "bible_quote": "\"Search the scriptures; for in them ye think ye have eternal life: and they are they which testify of me.\"",
@@ -110,18 +110,18 @@
     "view_map": "View larger map"
   },
   "salvation": {
-    "title": "Can someone know for sure they will go to Heaven when they die?",
+    "title": "Can someone know for sure where they will spend eternity when they die?",
     "intro": "A deep question with an answer that can change your eternity.",
-    "content": "It’s a difficult question. If we think only based on what we can see with our eyes, no one can truly know until they are dead. But not everything that exists must be seen to know it is real. We exercise our faith every day. By faith, we leave our house trusting there will be oxygen to breathe, even though we don’t see it; otherwise, we would all carry an oxygen tank. By faith, we trust that the food served at a restaurant is clean and edible, accepting it based on the word of the one who sells us the tacos. Faith is essential to our entire existence. Why is it so hard to believe what God says in His Word? He tells us how we can be sure we are going to Heaven when we die.",
+    "content": "It's a difficult question. If we think only based on what we can see with our eyes, no one can truly know until they are dead. But not everything that exists must be seen to know it is real. We exercise our faith every day. By faith, we leave our house trusting there will be oxygen to breathe, even though we don't see it; otherwise, we would all carry an oxygen tank. By faith, we trust that the food served at a restaurant is clean and edible, accepting it based on the word of the one who sells us the food. Faith is essential to our entire existence. Why is it so hard to believe what God says in His Word? He tells us how we can be sure we are going to Heaven when we die.",
     "points": {
       "1_title": "1. Recognize that we are sinners",
-      "1_text": "Romans 3:10 says: “As it is written: There is none righteous, not even one.”",
-      "2_title": "2. Christ is the one who can save us",
-      "2_text": "Romans 5:8 says: “But God shows His love for us in that while we were still sinners, Christ died for us.”",
-      "3_title": "3. Sin separates us from God",
-      "3_text": "Romans 3:23 says: “For all have sinned and fall short of the glory of God.”",
-      "4_title": "4. Trust in Christ",
-      "4_text": "John 1:12: “But to all who did receive Him...”, Romans 10:13: “For everyone who calls on the name of the Lord will be saved.”"
+      "1_text": "Romans 3:10 says: “As it is written: There is none righteous, not even one.“",
+      "2_title": "2. Recognize that sin separates us from God",
+      "2_text": "Romans 5:8 says: “But God shows His love for us in that while we were still sinners, Christ died for us.“",
+      "3_title": "3. Recognize that only Christ can save us",
+      "3_text": "Acts 4:12 says: “And there is salvation in no one else; for there is no other name under heaven that has been given among men by which we must be saved.”",
+      "4_title": "4. Put our faith and trust in Christ and His work on the cross",
+      "4_text": "Romans 10:13 says: “For whoever will call on the name of the Lord will be saved.”"
     },
     "call_to_action": "You can be saved right now.",
     "verse": "1 John 5:13 says: “I write these things to you… that you may know that you have eternal life.”"

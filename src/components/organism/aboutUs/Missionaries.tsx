@@ -1,6 +1,5 @@
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
 import M1 from "../../../../public/assets/misionaries/IMG-20250610-WA0031.jpg";
-import M2 from "../../../../public/assets/misionaries/IMG-20250530-WA0056.jpg";
 import M3 from "../../../../public/assets/misionaries/IMG-20250610-WA0026.jpg";
 import M4 from "../../../../public/assets/misionaries/IMG-20250610-WA0032.jpg";
 import { useEffect, useState } from 'react';
@@ -8,10 +7,9 @@ import { Missionary } from "@/types/Missionary.ts";
 import { useTranslation } from "react-i18next";
 
 const missionaries = [
-    { name: 'Goins Family', image: M2, description: 'Missionaries to the Hispanic people of Arizona. Please pray for the Goins family as they continue serving faithfully.' },
-    { name: 'Missions In Action International', image: M1, description: 'Supporting church planting and training nationals around the world.' },
-    { name: 'Stoltzfus Family', image: M4, description: 'Serving through Prayer Baptist Missions International. Ministry of HELPS.' },
     { name: 'Kings to Mexico', image: M3, description: 'Reaching the heart of Mexico. Pray for the King family as they minister in Guanajuato.' },
+    { name: 'Stoltzfus Family', image: M4, description: 'Serving through Prayer Baptist Missions International. Ministry of HELPS.' },
+    { name: 'Missions In Action International', image: M1, description: 'Supporting church planting and training nationals around the world.' },
 ];
 
 type MissionaryCardProps = {
