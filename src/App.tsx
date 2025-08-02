@@ -9,6 +9,7 @@ import { ROUTES } from '@/config/routes.tsx';
 import FloatingRadioButton from "@/components/atoms/FloatingRadioButton";
 import ScrollToHashElement from "@/components/organism/ScrollToHashElement.tsx";
 import visitsService from "@/domain/services/Visits.service.ts";
+import { churchStructuredData, injectStructuredData } from '@/utils/structuredData';
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -18,11 +19,24 @@ function App() {
   }, [t, i18n.language])
 
   useEffect(() => {
-    visitsService.storeVisit(
-          {
-            url: window.location.href,
-          }
-      );
+    // Manejo seguro de errores para analytics
+    try {
+      visitsService.storeVisit({
+        url: window.location.href,
+      });
+    } catch (error) {
+      console.warn('Analytics service error:', error);
+    }
+
+    // Manejo seguro de structured data
+    try {
+      // Solo inyectar una vez para evitar duplicados
+      if (!document.querySelector('script[type="application/ld+json"]')) {
+        injectStructuredData(churchStructuredData);
+      }
+    } catch (error) {
+      console.warn('Structured data injection error:', error);
+    }
   }, []);
 
   return (
