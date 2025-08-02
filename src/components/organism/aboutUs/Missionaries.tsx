@@ -1,8 +1,8 @@
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
-import M1 from "../../../../public/assets/misionaries/MIAI.jpg";
-import M2 from "../../../../public/assets/misionaries/key-family.jpg";
-import M3 from "../../../../public/assets/misionaries/IMG-20250610-WA0026.jpg";
-import M4 from "../../../../public/assets/misionaries/IMG-20250610-WA0032.jpg";
+import M1 from "../../../../public/assets/misionaries/MIAI.webp";
+import M2 from "../../../../public/assets/misionaries/key-family.webp";
+import M3 from "../../../../public/assets/misionaries/IMG-20250610-WA0026.webp";
+import M4 from "../../../../public/assets/misionaries/IMG-20250610-WA0032.webp";
 import { useEffect, useState } from 'react';
 import { Missionary } from "@/types/Missionary.ts";
 import { useTranslation } from "react-i18next";

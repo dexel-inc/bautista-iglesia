@@ -1,4 +1,4 @@
-import churchImage from "../../../../public/assets/church-in-desert.jpg";
+import churchImage from "../../../../public/assets/church-in-desert.webp";
 import goinsFamily from "../../../../public/assets/goins-family.png";
 import { useTranslation } from "react-i18next";
 import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";

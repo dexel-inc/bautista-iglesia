@@ -1,7 +1,7 @@
 
 import { useTranslation } from 'react-i18next';
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
-import CommunityMeeting from "../../../../public/assets/community-meeting.jpg";
+import CommunityMeeting from "../../../../public/assets/community-meeting.webp";
 
 export default function History() {
   const { t } = useTranslation();

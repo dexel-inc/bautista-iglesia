@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import GoogleLocation from "../molecules/googleLocation";
-import churchMapImg from "../../../public/assets/church-map.png";
+import churchMapImg from "../../../public/assets/church-map.webp";
 import churchInfo from "@/services/churchInfo.json";
 
 export default function LocationSection() {

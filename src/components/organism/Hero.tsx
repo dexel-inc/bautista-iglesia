@@ -1,4 +1,4 @@
-import churchHero from "../../../public/assets/church-in-desert.jpg";
+import churchHero from "../../../public/assets/church-in-desert.webp";
 import { useTranslation } from 'react-i18next';
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
 
