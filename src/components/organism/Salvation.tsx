@@ -22,29 +22,29 @@ export default function SalvationSection() {
                         {t("salvation.content")}
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
-                        <div className="card-item">
+                    <div className="grid md:grid-cols-2 gap-8" role="list">
+                        <div className="card-item" role="listitem">
                             <h4 className="text-xl font-semibold text-primary-600 mb-2">
                                 {t("salvation.points.1_title")}
                             </h4>
                             <p>{t("salvation.points.1_text")}</p>
                         </div>
 
-                        <div className="card-item">
+                        <div className="card-item" role="listitem">
                             <h4 className="text-xl font-semibold text-primary-600 mb-2">
                                 {t("salvation.points.2_title")}
                             </h4>
                             <p>{t("salvation.points.2_text")}</p>
                         </div>
 
-                        <div className="card-item">
+                        <div className="card-item" role="listitem">
                             <h4 className="text-xl font-semibold text-primary-600 mb-2">
                                 {t("salvation.points.3_title")}
                             </h4>
                             <p>{t("salvation.points.3_text")}</p>
                         </div>
 
-                        <div className="card-item">
+                        <div className="card-item" role="listitem">
                             <h4 className="text-xl font-semibold text-primary-600 mb-2">
                                 {t("salvation.points.4_title")}
                             </h4>

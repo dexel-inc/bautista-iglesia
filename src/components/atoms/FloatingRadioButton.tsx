@@ -5,14 +5,25 @@ function FloatingRadioButton() {
     const { t } = useTranslation();
 
     return (
-        <Link to={"https://radiolavoz.net/listen/"} className="group fixed bottom-5 right-5 z-20 flex items-center space-x-2">
+        <Link 
+          to={"https://radiolavoz.net/listen/"} 
+          className="group fixed bottom-5 right-5 z-20 flex items-center space-x-2"
+          aria-label={t('radio.button')}
+        >
             <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-primary-500 text-white px-4 py-2 rounded-full shadow-lg font-semibold">
                 {t('radio.button')}
             </div>
             <div className="flex shadow-lg shadow-gray-600 items-center duration-300 justify-center bg-primary-500 h-16 w-16 hover:bg-primary-600 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-                     width="100%" viewBox="0 0 288 224" enableBackground="new 0 0 288 224"
-                     className="-ml-1 h-16 w-16 fill-current"
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    x="0px" 
+                    y="0px"
+                    width="100%" 
+                    viewBox="0 0 288 224" 
+                    enableBackground="new 0 0 288 224"
+                    className="-ml-1 h-16 w-16 fill-current"
+                    role="img"
+                    aria-label="Icono de radio"
                 >
                     <path fill="#ffffff" opacity="1.000000" stroke="none"
                           d="

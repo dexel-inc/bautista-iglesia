@@ -23,13 +23,16 @@
     "inputs": {
       "email": {
         "field": "Correo Electrónico",
-        "description": "Ingresa tu correo"
+        "description": "Ingresa tu correo",
+        "label": "Dirección de correo electrónico"
       },
       "name": {
-        "field": "Nombre"
+        "field": "Nombre",
+        "label": "Nombre completo"
       },
       "phone": {
-        "field": "Teléfono"
+        "field": "Teléfono",
+        "label": "Número de teléfono"
       }
     },
     "activities": "Actividades <br /> de",
@@ -125,5 +128,16 @@
     },
     "call_to_action": "Tú puedes ser salvo ahora mismo.",
     "verse": "1 Juan 5:13 dice: “Estas cosas os he escrito... para que sepáis que tenéis vida eterna.”"
+  },
+  "accessibility": {
+    "buttons": {
+      "close": "Cerrar",
+      "menu": "Abrir menú",
+      "subscribe": "Suscribirse al boletín",
+      "carousel_prev": "Elemento anterior",
+      "carousel_next": "Elemento siguiente",
+      "carousel_goto": "Ir al elemento {{index}}",
+      "language_switch": "Cambiar idioma a {{language}}"
+    }
   }
 }

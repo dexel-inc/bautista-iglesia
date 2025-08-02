@@ -36,7 +36,7 @@ export default function WhoWeAre() {
                 className="relative w-[75vw] h-[30vh] flex justify-center items-end z-10 lg:w-[40vw] lg:h-[50vh] lg:absolute lg:top-1/2 lg:-translate-y-1/2">
               <img
                   src={churchImg}
-                  alt="Congregación"
+                  alt="Congregación de la Iglesia Bautista Fundamental reunida en oración y adoración"
                   className="w-[75vw] h-[30vh] object-cover rounded-3xl shadow-lg
               lg:w-[40vw] lg:h-[50vh]"
                   style={{zIndex: 2}}

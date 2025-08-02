@@ -75,7 +75,7 @@ export default function Testimonials() {
               <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow mb-4 flex items-center justify-center bg-black">
                 <img
                   src={testimony.avatar}
-                  alt={testimony.name}
+                  alt={`Foto de perfil de ${testimony.name}`}
                   className="w-full h-full object-cover"
                 />
               </div>

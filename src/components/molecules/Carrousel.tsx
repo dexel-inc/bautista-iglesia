@@ -1,5 +1,6 @@
 import {useEffect, useRef, useState} from 'react'
 import type { ReactNode } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export type Props = {
   slides: Array<string>;
@@ -12,6 +13,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
   const carouselRef = useRef<HTMLDivElement>(null)
   const [currentSlide, setCurrentSlide] = useState(0)
   const [slidesPerView, setSlidesPerView] = useState(1)
+  const { t } = useTranslation()
 
   const getSlidesPerView = () => (window.innerWidth >= 768 ? lengthWithPageLG : 1)
 
@@ -58,6 +60,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
       </div>
       <button
         onClick={handlePrev}
+        aria-label={t("accessibility.buttons.carousel_prev")}
         className="absolute inset-y-0 start-0 inline-flex justify-center items-center w-12 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none rounded-s-lg"
       >
         <svg
@@ -67,6 +70,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
+          aria-hidden="true"
         >
           <path d="m15 18-6-6 6-6" />
         </svg>
@@ -75,6 +79,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
       {/* Next button */}
       <button
         onClick={handleNext}
+        aria-label={t("accessibility.buttons.carousel_next")}
         className="absolute inset-y-0 end-0 inline-flex justify-center items-center w-12 h-full text-gray-800 hover:bg-gray-800/10 focus:outline-none rounded-e-lg"
       >
         <svg
@@ -84,6 +89,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"
+          aria-hidden="true"
         >
           <path d="m9 18 6-6-6-6" />
         </svg>
@@ -93,6 +99,7 @@ export default function Carrousel({slides, lengthWithPageLG, children, className
           <button
             key={i}
             onClick={() => scrollToSlide(i)}
+            aria-label={t("accessibility.buttons.carousel_goto", { index: i + 1 })}
             className={`size-3 border rounded-full cursor-pointer
               ${i === currentSlide
               ? 'bg-primary-500 border-primary-500'

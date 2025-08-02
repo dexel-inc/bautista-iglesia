@@ -35,7 +35,7 @@ function NavBar() {
       <div className="flex-none lg:hidden">
         <label
           htmlFor="sidebar"
-          aria-label="open sidebar"
+          aria-label={t("accessibility.buttons.menu")}
           className="btn btn-square btn-ghost"
         >
           <svg
@@ -43,6 +43,7 @@ function NavBar() {
             fill="none"
             viewBox="0 0 24 24"
             className="inline-block h-6 w-6 stroke-current"
+            aria-hidden="true"
           >
             <path
               strokeLinecap="round"

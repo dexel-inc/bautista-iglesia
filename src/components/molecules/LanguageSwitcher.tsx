@@ -18,7 +18,11 @@ const LanguageSwitcher = () => {
 
   return (
     <li>
-      <a href="#" onClick={handleChangeLanguage}>
+      <a 
+        href="#" 
+        onClick={handleChangeLanguage}
+        aria-label={t(`accessibility.buttons.language_switch`, { language: t(`common.languages.${langLabel}`) })}
+      >
         {langLabel + ' - ' + t(`common.languages.${langLabel}`)}
       </a>
     </li>

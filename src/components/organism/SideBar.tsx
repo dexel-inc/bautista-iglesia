@@ -7,7 +7,11 @@ function SideBar() {
 
     return (
       <div className="drawer-side z-20">
-          <label htmlFor="sidebar" aria-label="close sidebar" className="drawer-overlay"></label>
+          <label 
+            htmlFor="sidebar" 
+            aria-label={t("accessibility.buttons.close")} 
+            className="drawer-overlay"
+          ></label>
           <ul className="menu p-4 w-60 md:w-80 min-h-full bg-base-200 text-base-content">
               <li>
                   <Link to="/#home">{t("menu.home")}</Link>

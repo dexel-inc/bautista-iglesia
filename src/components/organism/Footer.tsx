@@ -25,14 +25,21 @@ function Footer() {
             {t("footer.subscribe_desc")}
           </h2>
           <form className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4">
-            <input
-              type="email"
-              placeholder={t("common.inputs.email.description")}
-              className="w-full md:flex-1 px-4 py-3 rounded-xl text-gray-800 bg-white w-1/2 focus:outline-none"
-              required
-            />
+            <div className="w-full md:flex-1">
+              <label htmlFor="newsletter-email" className="sr-only">
+                {t("common.inputs.email.label")}
+              </label>
+              <input
+                id="newsletter-email"
+                type="email"
+                placeholder={t("common.inputs.email.description")}
+                className="w-full px-4 py-3 rounded-xl text-gray-800 bg-white focus:outline-none"
+                required
+              />
+            </div>
             <button
               type="submit"
+              aria-label={t("accessibility.buttons.subscribe")}
               className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl"
             >
               {t("footer.subscribe")}
