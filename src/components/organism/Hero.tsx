@@ -1,4 +1,4 @@
-import churchHero from "../../../public/assets/church-image2.png";
+import churchHero from "../../../public/assets/church-in-desert.jpg";
 import { useTranslation } from 'react-i18next';
 import AnimateOnScroll from '@/components/molecules/AnimateOnScroll.tsx';
 
@@ -11,7 +11,7 @@ export default function Hero() {
         className="w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${churchHero})` }}
     >
-      <div className="w-full h-full bg-black/30 flex items-center justify-center p-8">
+      <div className="w-full h-full bg-black/15 flex items-center justify-center p-8">
         <div className="text-center text-white space-y-4">
           <AnimateOnScroll animation="animate-fade-down animate-duration-[4000ms] animate-ease-out">
             <h1
