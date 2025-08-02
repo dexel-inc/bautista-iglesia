@@ -73,12 +73,15 @@
     "come_soon": "Come soon!",
     "title_hispanic": "Reaching the Hispanic World",
     "for_christ": "For Christ",
-    "description_hispanic": "Are you searching in this world, in vices, in money, for the peace that only God can give? <br/> <strong className=\"font-extrabold\"> Christ is the answer!</strong> We invite you to our church. We are a church that understands the needs of the Hispanic community. We are a Fundamental and Independent Baptist Church that preaches and practices the Word of God, preached and taught in Spanish. It doesn't matter if you are young or an adult. We are sure you will find friendly people and a warm welcome when you visit our church."
+    "question": "Are you searching in this world, in vices, in money, for the peace that only God can give?",
+    "christ_answer": "Christ is the answer!",
+    "invitation": "We invite you to our church. We are a Church that understands the needs of the Hispanic community. We are an independent Fundamental Baptist Church that preaches and practices the Word of God, preached and taught in Spanish. It doesn't matter if you are young or an adult. We are sure you will discover friendly people and a warm welcome when you visit our church."
   },
   "testimonials": {
     "title": "Testimonials",
     "bible_msg": "“Blessed are they that keep his testimonies, and that seek him with the whole heart.”",
-    "verse": "Psalm 119:2"
+    "verse": "Psalm 119:2",
+    "read_more": "Read more"
   },
   "our_pastor": {
     "our": "Our",

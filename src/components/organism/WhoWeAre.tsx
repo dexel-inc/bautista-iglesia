@@ -19,14 +19,13 @@ export default function WhoWeAre() {
               </AnimateOnScroll>
               <p className="text-color text-sm leading-relaxed text-center gap-2 flex flex-col">
             <span>
-            ¿Andas buscando en este mundo, en los vicios, en el dinero, la paz que solo Dios puede dar?
+            {t("who_we_are.question")}
             </span>
                 <span className="font-extrabold text-3xl text-primary-500">
-              ¡Cristo es la respuesta!
+              {t("who_we_are.christ_answer")}
             </span>
                 <span className="text-md">
-              Te invitamos a nuestra iglesia. Somos una Iglesia que entiende las necesidades de la comunidad hispana.
-              Somos una Iglesia Bautista Fundamental e independiente, que predica y practica la Palabra de Dios, predicada y enseñada en español. No importa si eres joven o adulto. Estamos seguros que descubrirás gente amigable y una calurosa bienvenida cuando visites nuestra iglesia.
+              {t("who_we_are.invitation")}
             </span>
               </p>
             </div>

@@ -1,38 +1,114 @@
 import Carrousel from '../molecules/Carrousel.tsx';
 import AnimateOnScroll from '../molecules/AnimateOnScroll.tsx';
 import { useTranslation } from 'react-i18next';
+import { useEffect, useState } from 'react';
+import { testimonies, type Testimony } from '@/data/testimonials.ts';
 
-type Testimony = {
-  name: string;
-  text: string;
-  avatar: string;
+const CHARACTER_LIMIT = 200;
+
+type TestimonyModalProps = {
+  testimony: Testimony | null;
+  isModalOpen: boolean;
+  onClose: () => void;
 };
 
-const testimonies: Testimony[] = [
-  {
-    name: "Lucía Fernández",
-    text: `La iglesia ha sido un refugio para mi familia. Aquí aprendimos a confiar en el Señor y a apoyarnos mutuamente. Los estudios bíblicos y la comunión nos han acercado más a Dios y entre nosotros.`,
-    avatar: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=facearea&w=256&h=256&facepad=2",
-  },
-  {
-    name: "Javier Morales",
-    text: `Agradezco a Dios por cada predicación y por los hermanos que me animan. He visto cómo Dios transforma vidas y restaura corazones. La iglesia es mi segunda casa y un lugar donde siempre encuentro paz.`,
-    avatar: "https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=facearea&w=256&h=256&facepad=2",
-  },
-  {
-    name: "María González",
-    text: `Doy gracias a Dios por la iglesia, donde encontré una familia espiritual. Cada mensaje fortalece mi fe y me anima a seguir adelante. He visto respuestas a mis oraciones y he crecido mucho en mi relación con Cristo.`,
-    avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=facearea&w=256&h=256&facepad=2",
-  },
-  {
-    name: "Carlos Ramírez",
-    text: `Desde que llegué a la iglesia, mi vida cambió. El amor y la enseñanza bíblica me han ayudado a superar momentos difíciles. Ahora sirvo con alegría y he encontrado propósito en servir a Dios y a los demás.`,
-    avatar: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2",
-  },
-];
+const TestimonyModal = ({ testimony, onClose, isModalOpen }: TestimonyModalProps) => {
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    const modal = document.getElementById('modal-testimony') as HTMLDialogElement | null;
+    if (!modal) return;
+
+    const handleClose = () => onClose();
+    modal.addEventListener('close', handleClose);
+
+    return () => modal.removeEventListener('close', handleClose);
+  }, [onClose]);
+
+  if (!testimony) return null;
+
+  return (
+    <dialog
+      id="modal-testimony"
+      className="modal modal-bottom md:modal-middle"
+      onClose={onClose}
+    >
+      <div
+        className={`
+          modal-box transition-all duration-300 ease-in-out transform relative
+          ${isModalOpen
+            ? 'translate-y-0 md:scale-100 opacity-100'
+            : 'translate-y-full md:translate-y-4 md:scale-95 opacity-0'}
+        `}
+      >
+        <div className="flex flex-col items-center p-6">
+          <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow mb-4 flex items-center justify-center bg-black">
+            <img
+              src={testimony.avatar}
+              alt={`Foto de perfil de ${testimony.name}`}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <h3 className="font-semibold text-xl mb-4 text-center">{testimony.name}</h3>
+          <div className="text-gray-600 leading-relaxed whitespace-pre-line">
+            {testimony.text}
+          </div>
+        </div>
+      </div>
+      
+      {/* Fixed close button that follows viewport */}
+      <div className="fixed top-25 right-4 z-[9999]">
+        <form method="dialog">
+          <button 
+            className="btn btn-link hover:bg-gray-100 radio-xl fill-gray-800 text-gray-800 w-8 h-8 bg-white shadow-lg rounded-full border border-gray-200"
+            aria-label={t("accessibility.buttons.close")}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" aria-hidden="true">
+              <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <form method="dialog" className="modal-backdrop">
+        <button aria-label={t("accessibility.buttons.close")}>close</button>
+      </form>
+    </dialog>
+  );
+};
 
 export default function Testimonials() {
   const { t } = useTranslation();
+  const [selectedTestimony, setSelectedTestimony] = useState<Testimony | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const selectTestimony = (testimony: Testimony) => {
+    setSelectedTestimony(testimony);
+  };
+
+  useEffect(() => {
+    const modal = document.getElementById('modal-testimony') as HTMLDialogElement | null;
+
+    if (selectedTestimony && modal) {
+      modal.showModal();
+      requestAnimationFrame(() => setIsModalOpen(true));
+    }
+  }, [selectedTestimony]);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+
+    setTimeout(() => {
+      const modal = document.getElementById('modal-testimony') as HTMLDialogElement | null;
+      modal?.close();
+      setSelectedTestimony(null);
+    }, 300);
+  };
+
+  const truncateText = (text: string, limit: number) => {
+    if (text.length <= limit) return text;
+    return text.substring(0, limit) + '...';
+  };
 
   return (
     <section className="py-12 px-6 md:px-16 bg-[#f7f8fa]">
@@ -80,19 +156,33 @@ export default function Testimonials() {
                 />
               </div>
               <div className="font-semibold text-lg mb-2 text-center">{testimony.name}</div>
-              <p className="
-                text-center text-gray-600 text-sm leading-relaxed
-                flex-1 flex items-center justify-center
-                overflow-hidden
-                line-clamp-5
-                w-full
-              ">
-                {testimony.text}
-              </p>
+              <div className="flex-1 flex flex-col items-center justify-center w-full">
+                <p className="
+                  text-center text-gray-600 text-sm leading-relaxed
+                  overflow-hidden
+                  w-full
+                ">
+                  {truncateText(testimony.text, CHARACTER_LIMIT)}
+                </p>
+                {testimony.text.length > CHARACTER_LIMIT && (
+                  <button
+                    onClick={() => selectTestimony(testimony)}
+                    className="mt-3 text-primary-500 hover:text-primary-600 text-sm font-medium underline"
+                  >
+                    {t('testimonials.read_more')}
+                  </button>
+                )}
+              </div>
             </div>
           </div>
         ))}
       </Carrousel>
+
+      <TestimonyModal
+        testimony={selectedTestimony}
+        isModalOpen={isModalOpen}
+        onClose={closeModal}
+      />
     </section>
   );
 }

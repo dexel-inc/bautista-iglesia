@@ -9,7 +9,7 @@ function Radio() {
     return (
         <div
             id="radio"
-            className="w-full h-[100vh] bg-white flex flex-col justify-center items-center"
+            className="w-full bg-white flex flex-col justify-center items-center"
         >
             <div
                 className="relative w-full rounded-xl min-h-[80%]  items-center md:items-start overflow-hidden"

@@ -76,12 +76,15 @@
     "come_soon": "¡Ven pronto!",
     "title_hispanic": "Alcanzando Al Mundo Hispano",
     "for_christ": "Para Cristo",
-    "description_hispanic": "¿Andas buscando en este mundo, en los vicios, en el dinero, la paz que solo Dios puede dar? <br/> <strong className=\"font-extrabold\"> ¡Cristo es la respuesta!</strong> Te invitamos a nuestra iglesia. Somos una Iglesia que entiende las necesidades de la comunidad hispana. Somos una Iglesia Bautista Fundamental e independiente, que predica y practica la Palabra de Dios, predicada y enseñada en español. No importa si eres joven o adulto. Estamos seguros que descubrirás gente amigable y una calurosa bienvenida cuando visites nuestra iglesia."
+    "question": "¿Andas buscando en este mundo, en los vicios, en el dinero, la paz que solo Dios puede dar?",
+    "christ_answer": "¡Cristo es la respuesta!",
+    "invitation": "Te invitamos a nuestra iglesia. Somos una Iglesia que entiende las necesidades de la comunidad hispana. Somos una Iglesia Bautista Fundamental e independiente, que predica y practica la Palabra de Dios, predicada y enseñada en español. No importa si eres joven o adulto. Estamos seguros que descubrirás gente amigable y una calurosa bienvenida cuando visites nuestra iglesia."
   },
   "testimonials": {
     "title": "Testimonios",
     "bible_msg": "“Bienaventurados los que guardan sus testimonios, Y con todo el corazón le buscan”",
-    "verse": "Salmos 119:2"
+    "verse": "Salmos 119:2",
+    "read_more": "Ver más"
   },
   "our_pastor": {
     "our": "Nuestro",

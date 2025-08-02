@@ -7,7 +7,7 @@ const DonationSection = () => {
 
   return (
     <section id="donations" className="px-6 bg-white">
-      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between">
+      <div className="max-w-6xl mt-20 mx-auto flex flex-col lg:flex-row gap-10 items-center justify-between">
         <div className="flex-1 text-center lg:text-left">
           <AnimateOnScroll animation="animate-fade-right animate-fill-both animate-duration-[2000ms] animate-ease-out">
             <h2 className="text-3xl md:text-4xl font-bold title title-color mb-6">
@@ -43,7 +43,7 @@ const DonationSection = () => {
                   { t('common.inputs.email.field') }:
                 </p>
                 <p className="mb-2 text-sm">
-                  {t("services.email")}
+                  ibfdeaz@gmail.com
                 </p>
 
                 <p className="text-sm font-semibold title-color">
