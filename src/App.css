@@ -34,6 +34,7 @@
 
 .title {
   font-family: "David Libre", serif;
+  font-display: swap;
 }
 
 .navbar {
@@ -41,6 +42,11 @@
   color: white;
 }
 
+.navbar .title {
+  min-height: 1.5rem;
+  transform: translateZ(0);
+  contain: layout style;
+}
 
 .title-color {
   color: var(--color-gray-800);
@@ -72,4 +78,10 @@
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+}
+
+/* Optimizar logo para GPU */
+svg {
+  transform: translateZ(0);
+  will-change: transform;
 }

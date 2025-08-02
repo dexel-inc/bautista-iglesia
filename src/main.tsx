@@ -1,11 +1,17 @@
-import { StrictMode } from 'react'
+import { StrictMode, startTransition } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
+import './App.css'
 import App from './App.tsx'
-import './config/i18n.ts';
+import './i18n'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+// Optimización: marcar el contenido principal como crítico
+const root = createRoot(document.getElementById('root')!)
+
+// Usar startTransition para priorizar el renderizado inicial
+startTransition(() => {
+  root.render(
+    <StrictMode>
+      <App />
+    </StrictMode>,
+  )
+})

@@ -1,6 +1,7 @@
 import type {Props} from "@/components/atoms/Ico.ts";
+import { memo } from "react";
 
-function Logo({className}: Props) {
+const Logo = memo(function Logo({className}: Props) {
   return (
     <svg 
       className={className} 
@@ -9,6 +10,7 @@ function Logo({className}: Props) {
       xmlns="http://www.w3.org/2000/svg"
       role="img"
       aria-label="Logo de la Iglesia Bautista Fundamental"
+      style={{ willChange: 'transform' }} // Optimización para GPU
     >
       <g clipPath="url(#clip0_289_381)">
         <path
@@ -685,6 +687,6 @@ function Logo({className}: Props) {
       </g>
     </svg>
   )
-}
+});
 
-export default Logo
+export default Logo;

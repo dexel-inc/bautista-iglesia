@@ -8,9 +8,9 @@ function NavBar() {
 
   return (
     <div className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
-      <div className="title mx-2 flex-1 flex px-2 items-center">
+      <div className="title mx-2 flex-1 flex px-2 items-center min-h-[1.5rem]">
         <Logo className="w-20 h-20" />
-        {t("siteTitle")}
+        <span className="font-medium text-inherit">{t("siteTitle")}</span>
       </div>
       <div className="hidden flex-none lg:block">
         <ul className="menu menu-horizontal">
