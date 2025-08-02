@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ROUTES } from '@/config/routes.tsx';
 import FloatingRadioButton from "@/components/atoms/FloatingRadioButton";
 import ScrollToHashElement from "@/components/organism/ScrollToHashElement.tsx";
+import visitsService from "@/domain/services/Visits.service.ts";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -15,6 +16,14 @@ function App() {
   useEffect(() => {
     document.title = 'IBF - ' + t('siteTitle')
   }, [t, i18n.language])
+
+  useEffect(() => {
+    visitsService.storeVisit(
+          {
+            url: window.location.href,
+          }
+      );
+  }, []);
 
   return (
     <BrowserRouter>
