@@ -2,7 +2,8 @@ import Carrousel from '../molecules/Carrousel.tsx';
 import AnimateOnScroll from '../molecules/AnimateOnScroll.tsx';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
-import { testimonies, type Testimony } from '@/data/testimonials.ts';
+import { testimonies as testimoniesMock, type Testimony } from '@/data/testimonials.ts';
+import apiService from "@/domain/services/api.service.ts";
 
 const CHARACTER_LIMIT = 200;
 
@@ -44,14 +45,14 @@ const TestimonyModal = ({ testimony, onClose, isModalOpen }: TestimonyModalProps
         <div className="flex flex-col items-center p-6">
           <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow mb-4 flex items-center justify-center bg-black">
             <img
-              src={testimony.avatar}
-              alt={`Foto de perfil de ${testimony.name}`}
+                src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2"
+                alt={`Foto de perfil de ${testimony.name}`}
               className="w-full h-full object-cover"
             />
           </div>
           <h3 className="font-semibold text-xl mb-4 text-center">{testimony.name}</h3>
           <div className="text-gray-600 leading-relaxed whitespace-pre-line">
-            {testimony.text}
+            {testimony.content}
           </div>
         </div>
       </div>
@@ -81,6 +82,26 @@ export default function Testimonials() {
   const { t } = useTranslation();
   const [selectedTestimony, setSelectedTestimony] = useState<Testimony | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [testimonies, setTestimonies] = useState<Testimony[]>([]);
+
+  const getTestimonies = async () => {
+    try {
+      let testimoniesFromApi = await apiService.indexTestimonies();
+
+      if (!testimoniesFromApi || testimoniesFromApi.length === 0) {
+        testimoniesFromApi = testimoniesMock;
+      }
+
+      setTestimonies(testimoniesFromApi);
+    } catch (error) {
+      console.warn(error);
+      setTestimonies(testimoniesMock)
+    }
+  }
+
+  useEffect(() => {
+    getTestimonies();
+  }, []);
 
   const selectTestimony = (testimony: Testimony) => {
     setSelectedTestimony(testimony);
@@ -150,8 +171,8 @@ export default function Testimonials() {
             ">
               <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-white shadow mb-4 flex items-center justify-center bg-black">
                 <img
-                  src={testimony.avatar}
-                  alt={`Foto de perfil de ${testimony.name}`}
+                  src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=facearea&w=256&h=256&facepad=2"
+                  alt="anonymous user"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -162,9 +183,9 @@ export default function Testimonials() {
                   overflow-hidden
                   w-full
                 ">
-                  {truncateText(testimony.text, CHARACTER_LIMIT)}
+                  {truncateText(testimony.content, CHARACTER_LIMIT)}
                 </p>
-                {testimony.text.length > CHARACTER_LIMIT && (
+                {testimony.content.length > CHARACTER_LIMIT && (
                   <button
                     onClick={() => selectTestimony(testimony)}
                     className="mt-3 text-primary-500 hover:text-primary-600 text-sm font-medium underline"

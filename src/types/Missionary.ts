@@ -1,5 +1,5 @@
 export interface Missionary {
-    name: string;
+    title: string;
     image: string;
-    description: string;
+    message: string;
 }

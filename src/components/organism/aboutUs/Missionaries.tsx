@@ -6,12 +6,13 @@ import M4 from "../../../../public/assets/misionaries/IMG-20250610-WA0032.webp";
 import { useEffect, useState } from 'react';
 import { Missionary } from "@/types/Missionary.ts";
 import { useTranslation } from "react-i18next";
+import apiService from "@/domain/services/api.service.ts";
 
-const missionaries = [
-    { name: 'Kings to Mexico', image: M3, description: 'Reaching the heart of Mexico. Pray for the King family as they minister in Guanajuato.' },
-    { name: 'Stoltzfus Family', image: M4, description: 'Serving through Prayer Baptist Missions International. Ministry of HELPS.' },
-    { name: 'Missions In Action International', image: M1, description: 'Supporting church planting and training nationals around the world.' },
-    { name: 'Missions In Action International', image: M2, description: 'Supporting church planting and training nationals around the world.' },
+const missionariesMock = [
+    { title: 'Kings to Mexico', image: M3, message: 'Reaching the heart of Mexico. Pray for the King family as they minister in Guanajuato.' },
+    { title: 'Stoltzfus Family', image: M4, message: 'Serving through Prayer Baptist Missions International. Ministry of HELPS.' },
+    { title: 'Missions In Action International', image: M1, message: 'Supporting church planting and training nationals around the world.' },
+    { title: 'Missions In Action International', image: M2, message: 'Supporting church planting and training nationals around the world.' },
 ];
 
 type MissionaryCardProps = {
@@ -24,7 +25,7 @@ const MissionaryCard = ({ missionary, onClick }: MissionaryCardProps) => (
         className="card bg-base-100 shadow-xl cursor-pointer rounded-lg hover:scale-105 transition-transform h-60 md:h-50"
         onClick={() => onClick(missionary)}
     >
-        <img src={missionary.image} alt={missionary.name} className="rounded-lg w-full h-full object-contain" />
+        <img src={missionary.image} alt={missionary.title} className="rounded-lg w-full h-full object-contain" />
     </div>
 );
 
@@ -90,7 +91,7 @@ const MissionaryModal = ({ missionary, onClose, isModalOpen }: MissionaryModalPr
 
                 <img
                     src={missionary.image}
-                    alt={`Foto de la familia misionera: ${missionary.name}`}
+                    alt={`Foto de la familia misionera: ${missionary.title}`}
                     onLoad={() => setLoaded(true)}
                     className={`w-full h-full object-contain transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'} max-h-120 rounded`}
                 />
@@ -109,6 +110,28 @@ const MissionariesSection = () => {
     const selectMissionary = (missionary: Missionary) => {
         setSelectedMissionary(missionary); // solo setea aquí
     };
+
+    const [missionaries, setMissionaries] = useState<Missionary[]>([]);
+
+    const getMissionaries = async () => {
+        try {
+            let missionariesFromApi = await apiService.indexMissionaries();
+
+            if (!missionariesFromApi || missionariesFromApi.length === 0) {
+                missionariesFromApi = missionariesMock;
+            }
+
+            setMissionaries(missionariesFromApi);
+        } catch (error) {
+            console.warn(error);
+            setMissionaries(missionariesMock)
+        }
+    }
+
+    useEffect(() => {
+        getMissionaries();
+    }, []);
+
 
     useEffect(() => {
         const modal = document.getElementById('modal-missionary') as HTMLDialogElement | null;
@@ -139,7 +162,7 @@ const MissionariesSection = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-7xl mx-auto">
                 {missionaries.map((m) => (
-                    <MissionaryCard key={m.name} missionary={m} onClick={selectMissionary} />
+                    <MissionaryCard key={m.title} missionary={m} onClick={selectMissionary} />
                 ))}
             </div>
 
