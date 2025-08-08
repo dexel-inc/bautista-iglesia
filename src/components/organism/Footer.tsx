@@ -4,22 +4,31 @@ import churchSchedulesJson from "@/services/church_schedules.json";
 import navegation from "@/services/navegation.json";
 import { useTranslation } from "react-i18next";
 import subscriptionsService from "@/domain/services/subscriptions.service.ts";
-import React from "react";
+import React, { useState } from "react";
+import Notification from "@/components/molecules/Notification.tsx";
 
 const churchSchedules: Record<string, { start_time: string }> = churchSchedulesJson;
 
 function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const [notification, setNotification] = useState<{ message: string; type: "success" | "error" } | null>(null);
+
   const storeSubscription = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       const emailInput = e.currentTarget.elements.namedItem("newsletter-email") as HTMLInputElement;
       if (emailInput?.value) {
           try {
-              await subscriptionsService.storeSubscription({ email: emailInput.value });
-              emailInput.value = "";
+              const response = await subscriptionsService.storeSubscription({ email: emailInput.value });
+              if (response) {
+                  emailInput.value = "";
+                  setNotification({ message: t("footer.subscription_message.success"), type: "success" });
+              } else {
+                  setNotification({ message: t("footer.subscription_message.error"), type: "error" });
+              }
           } catch (error) {
               console.error("Error subscribing:", error);
+              setNotification({ message: t("footer.subscription_message.error"), type: "error" });
           }
       }
   };
@@ -62,6 +71,15 @@ function Footer() {
               {t("footer.subscribe")}
             </button>
           </form>
+        <div className="mt-4 w-full max-w-xl mx-auto">
+            {notification && (
+                <Notification
+                    message={notification.message}
+                    type={notification.type}
+                    onClose={() => setNotification(null)}
+                />
+            )}
+        </div>
         </div>
       </section>
 
