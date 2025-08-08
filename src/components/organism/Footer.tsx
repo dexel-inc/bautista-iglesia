@@ -3,12 +3,26 @@ import churchImage from "../../../public/assets/church-in-desert.webp";
 import churchSchedulesJson from "@/services/church_schedules.json";
 import navegation from "@/services/navegation.json";
 import { useTranslation } from "react-i18next";
+import subscriptionsService from "@/domain/services/subscriptions.service.ts";
+import React from "react";
 
 const churchSchedules: Record<string, { start_time: string }> = churchSchedulesJson;
 
 function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const storeSubscription = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      const emailInput = e.currentTarget.elements.namedItem("newsletter-email") as HTMLInputElement;
+      if (emailInput?.value) {
+          try {
+              await subscriptionsService.storeSubscription({ email: emailInput.value });
+              emailInput.value = "";
+          } catch (error) {
+              console.error("Error subscribing:", error);
+          }
+      }
+  };
 
   return (
     <footer id="footer" className="bg-white text-gray-400">
@@ -24,7 +38,10 @@ function Footer() {
           <h2 className="title w-4/5 md:w-1/2 text-2xl md:text-4xl font-semibold mb-6">
             {t("footer.subscribe_desc")}
           </h2>
-          <form className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4">
+          <form
+              className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4"
+              onSubmit={storeSubscription}
+          >
             <div className="w-full md:flex-1">
               <label htmlFor="newsletter-email" className="sr-only">
                 {t("common.inputs.email.label")}
