@@ -3,12 +3,35 @@ import churchImage from "../../../public/assets/church-in-desert.webp";
 import churchSchedulesJson from "@/services/church_schedules.json";
 import navegation from "@/services/navegation.json";
 import { useTranslation } from "react-i18next";
+import subscriptionsService from "@/domain/services/subscriptions.service.ts";
+import React, { useState } from "react";
+import Notification from "@/components/molecules/Notification.tsx";
 
 const churchSchedules: Record<string, { start_time: string }> = churchSchedulesJson;
 
 function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
+  const [notification, setNotification] = useState<{ message: string; type: "success" | "error" } | null>(null);
+
+  const storeSubscription = async (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+      const emailInput = e.currentTarget.elements.namedItem("newsletter-email") as HTMLInputElement;
+      if (emailInput?.value) {
+          try {
+              const response = await subscriptionsService.storeSubscription({ email: emailInput.value });
+              if (response) {
+                  emailInput.value = "";
+                  setNotification({ message: t("footer.subscription_message.success"), type: "success" });
+              } else {
+                  setNotification({ message: t("footer.subscription_message.error"), type: "error" });
+              }
+          } catch (error) {
+              console.error("Error subscribing:", error);
+              setNotification({ message: t("footer.subscription_message.error"), type: "error" });
+          }
+      }
+  };
 
   return (
     <footer id="footer" className="bg-white text-gray-400">
@@ -24,7 +47,10 @@ function Footer() {
           <h2 className="title w-4/5 md:w-1/2 text-2xl md:text-4xl font-semibold mb-6">
             {t("footer.subscribe_desc")}
           </h2>
-          <form className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4">
+          <form
+              className="max-w-xl mx-auto w-full flex flex-col md:flex-row items-center gap-4"
+              onSubmit={storeSubscription}
+          >
             <div className="w-full md:flex-1">
               <label htmlFor="newsletter-email" className="sr-only">
                 {t("common.inputs.email.label")}
@@ -45,6 +71,15 @@ function Footer() {
               {t("footer.subscribe")}
             </button>
           </form>
+        <div className="mt-4 w-full max-w-xl mx-auto">
+            {notification && (
+                <Notification
+                    message={notification.message}
+                    type={notification.type}
+                    onClose={() => setNotification(null)}
+                />
+            )}
+        </div>
         </div>
       </section>
 

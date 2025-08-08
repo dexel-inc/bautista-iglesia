@@ -4,7 +4,11 @@
     "subscribe_desc": "Subscribe to receive news about our upcoming events",
     "subscribe": "Subscribe",
     "short_desc": "We are a fundamental church dedicated to the family. Our purpose is to be a Biblical, Christ-centered, and missionary church that serves the Hispanic population.",
-    "copyright": "© {{year}}. All rights reserved. Dexel Inc"
+    "copyright": "© {{year}}. All rights reserved. Dexel Inc",
+    "subscription_message": {
+      "success": "Thank you for subscribing!",
+      "error": "There was an error processing your request. Please try again later."
+    }
   },
   "common": {
     "read_more": "Read more",

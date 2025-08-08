@@ -4,7 +4,11 @@
     "subscribe_desc": "Suscríbete para recibir noticias sobre nuestros próximos eventos",
     "subscribe": "Suscribete",
     "short_desc": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana.",
-    "copyright": "© {{year}}. Todos los derechos reservados. Dexel inc"
+    "copyright": "© {{year}}. Todos los derechos reservados. Dexel inc",
+    "subscription_message": {
+      "success": "¡Gracias por suscribirte!",
+      "error": "Hubo un error al procesar tu solicitud. Por favor, intenta de nuevo más tarde."
+    }
   },
   "common": {
     "read_more": "Leer más",
