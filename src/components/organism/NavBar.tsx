@@ -21,7 +21,7 @@ function NavBar() {
             <Link to="/#radio">{t("menu.radio")}</Link>
           </li>
           <li>
-            <Link to="/about#hero">{t("menu.aboutUs")}</Link>
+            <Link to="/about#home">{t("menu.aboutUs")}</Link>
           </li>
           <LanguageSwitcher />
           <Link
