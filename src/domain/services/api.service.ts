@@ -9,7 +9,7 @@ async function indexMissionaries() {
     }
 
     try {
-        const response = await service.get(`/api/missionaries`);
+        const response = await service.get(`/api/public/missionaries`);
         return response.data.status.status === 'OK' ? response.data.data : null;
     } catch (error) {
         console.log(error)
@@ -23,7 +23,7 @@ async function indexTestimonies() {
     }
 
     try {
-        const response = await service.get(`/api/testimonies`);
+        const response = await service.get(`/api/public/testimonies`);
         return response.data.status.status === 'OK' ? response.data.data : null;
     } catch (error) {
         console.log(error)
