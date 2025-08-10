@@ -54,7 +54,7 @@
   },
   "radio": {
     "title": "Dios Te Quiere Hablar",
-    "description": "Te invitamos a conocer la emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
+    "description": "Te invitamos a escuchar nuestra transmisión en la emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
     "button": "Escúchanos ahora",
     "schedule": "Lunes - Viernes 6/7 Hora de Az<br/>9 a.m / p.m EST"
   },
@@ -75,7 +75,7 @@
   },
   "who_we_are": {
     "title": "¿Quienes somos?",
-    "description": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana. Creemos que la Palabra de Dios tiene las respuestas que el hombre necesita, y tratamos de predicar y enseñarla correctamente. Si está buscando un lugar de congregarse, o está interesado en conocer más de Dios,",
+    "description": "Somos una iglesia fundamental dedicada a la familia. Nuestro propósito es ser una iglesia Bíblica, Cristo-céntrica, y misionera que sirve a la población Hispana. Creemos que la Palabra de Dios tiene las respuestas que el hombre necesita, y tratamos de predicar y enseñarla guardando los preceptos bíblicos. Si está buscando un lugar donde congregarse, o está interesado en conocer más de Dios,",
     "welcome": "¡le extenderemos una calurosa bienvenida!",
     "come_soon": "¡Ven pronto!",
     "title_hispanic": "Alcanzando Al Mundo Hispano",
@@ -93,7 +93,7 @@
   "our_pastor": {
     "our": "Nuestro",
     "pastor": "Pastor",
-    "description": "El pastor Roberto Goins y su familia han dedicado sus vidas al servicio del Señor. Iniciaron su ministerio en Carolina del Sur, sirviendo por casi 12 años a la comunidad hispana. En 2005 entregaron sus vidas a Cristo, y su llamado se fortaleció gracias al vínculo cultural con Colombia, país de origen de su esposa. Hoy, guiados por Dios, trabajan en Arizona plantando una iglesia centrada en los principios eternos de la Palabra. Su mayor deseo es que cada persona conozca la verdadera paz y alegría que solo se hallan en una relación con Jesucristo. Su mayor deseo es que cada persona reconozca su condición espiritual delante de Dios y reciba el perdón y el regalo de la Salvación por medio de Jesucristo; por tanto, conozca la verdadera paz y alegría que solo se puede encontrar en Él."
+    "description": "El pastor Roberto Goins y su familia han dedicado sus vidas al servicio del Señor. Iniciaron su ministerio en Carolina del Sur, sirviendo por casi 12 años a la comunidad hispana. En 2005 entregaron sus vidas a Cristo, y su llamado se fortaleció gracias al vínculo cultural con Colombia, país de origen de su esposa. Hoy, guiados por Dios, trabajan en Arizona plantando una iglesia centrada en los principios eternos de la Palabra. Su mayor deseo es que cada persona reconozca su condición espiritual delante de Dios y reciba el perdón y el regalo de la Salvación por medio de Jesucristo; por tanto, conozca la verdadera paz y alegría que solo se puede encontrar con Él."
   },
   "missionaries": {
     "missionaries": "Misioneros",
@@ -127,14 +127,14 @@
       "1_title": "1. Reconocer que somos pecadores",
       "1_text": "Romanos 3:10 dice: “Como está escrito: No hay justo, ni aun uno.”",
       "2_title": "2. Reconocer que el pecado nos separa de Dios",
-      "2_text": "Romanos 5:8 dice: “Mas Dios muestra su amor para con nosotros, en que siendo aun pecadores, Cristo murió por nosotros.”",
+      "2_text": "Romanos 3:23 dice: “por cuanto todos pecaron, y están destituidos de la gloria de Dios.”",
       "3_title": "3. Reconocer que solamente Cristo nos puede salvar",
       "3_text": "Hechos 4:12 dice: “Y en ningún otro hay salvación; porque no hay otro nombre bajo el cielo, dado a los hombres, en que podamos ser salvos.”",
       "4_title": "4. Poner nuestra fe y confianza en Cristo y Su obra en la cruz",
-      "4_text": "Romanos 10:13 dice: “Porque todo aquel que invocare el nombre del Señor, será salvo.”"
+      "4_text": "Romanos 10:9-10 dice: “que si confesares con tu boca que Jesús es el Señor, y creyeres en tu corazón que Dios le levantó de los muertos, serás salvo. Porque con el corazón se cree para justicia, pero con la boca se confiesa para salvación.”"
     },
     "call_to_action": "Tú puedes ser salvo ahora mismo.",
-    "verse": "1 Juan 5:13 dice: “Estas cosas os he escrito... para que sepáis que tenéis vida eterna.”"
+    "verse": "Romanos 10:13 dice: “porque todo aquel que invocare el nombre del Señor, será salvo.”"
   },
   "accessibility": {
     "buttons": {
