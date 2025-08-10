@@ -5,7 +5,7 @@ export const churchStructuredData = {
   "alternateName": "IBF Casa Grande",
   "description": "Iglesia Bautista Fundamental e independiente que predica y practica la Palabra de Dios en español.",
   "url": "https://iglesiabautistafundamental.com",
-  "telephone": "(520) 840-5633",
+  "telephone": "(520) 549-5633",
   "email": "ibfdeaz@gmail.com",
   "address": {
     "@type": "PostalAddress",
