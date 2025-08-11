@@ -19,7 +19,6 @@ function App() {
   }, [t, i18n.language])
 
   useEffect(() => {
-    // Manejo seguro de errores para analytics
     try {
       visitsService.storeVisit({
         url: window.location.href,
@@ -28,9 +27,7 @@ function App() {
       console.warn('Analytics service error:', error);
     }
 
-    // Manejo seguro de structured data
     try {
-      // Solo inyectar una vez para evitar duplicados
       if (!document.querySelector('script[type="application/ld+json"]')) {
         injectStructuredData(churchStructuredData);
       }

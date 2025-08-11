@@ -5,6 +5,13 @@ import {useTranslation} from "react-i18next";
 function SideBar() {
     const { t } = useTranslation();
 
+    const closeSidebar = () => {
+        const sidebarCheckbox = document.getElementById('sidebar') as HTMLInputElement;
+        if (sidebarCheckbox) {
+            sidebarCheckbox.checked = false;
+        }
+    };
+
     return (
       <div className="drawer-side z-20">
           <label 
@@ -14,18 +21,19 @@ function SideBar() {
           ></label>
           <ul className="menu p-4 w-60 md:w-80 min-h-full bg-base-200 text-base-content">
               <li>
-                  <Link to="/#home">{t("menu.home")}</Link>
+                  <Link to="/#home" onClick={closeSidebar}>{t("menu.home")}</Link>
               </li>
               <li>
-                  <Link to="/#radio">{t("menu.radio")}</Link>
+                  <Link to="/#radio" onClick={closeSidebar}>{t("menu.radio")}</Link>
               </li>
               <li>
-                  <Link to="/about#hero">{t("menu.aboutUs")}</Link>
+                  <Link to="/about#home" onClick={closeSidebar}>{t("menu.aboutUs")}</Link>
               </li>
               <LanguageSwitcher/>
               <Link
                   to="/#donations"
                   className="mt-10 btn bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none"
+                  onClick={closeSidebar}
               >
                   {t("menu.donations")}
               </Link>
