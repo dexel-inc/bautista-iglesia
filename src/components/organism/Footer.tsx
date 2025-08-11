@@ -6,13 +6,26 @@ import { useTranslation } from "react-i18next";
 import subscriptionsService from "@/domain/services/subscriptions.service.ts";
 import React, { useState } from "react";
 import Notification from "@/components/molecules/Notification.tsx";
+import { Link } from "react-router-dom";
 
 const churchSchedules: Record<string, { start_time: string }> = churchSchedulesJson;
+
+const navigationMapping: Record<string, { page: string; section: string }> = {
+  home: { page: "/", section: "home" },
+  radio: { page: "/", section: "radio" },
+  donations: { page: "/", section: "donations" },
+  aboutUs: { page: "/about", section: "home" } 
+};
 
 function Footer() {
   const { t } = useTranslation();
   const currentYear = new Date().getFullYear();
   const [notification, setNotification] = useState<{ message: string; type: "success" | "error" } | null>(null);
+
+  const getSectionUrl = (section: string) => {
+    const mapping = navigationMapping[section] || { page: "/", section: "home" };
+    return `${mapping.page}#${mapping.section}`;
+  };
 
   const storeSubscription = async (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
@@ -119,9 +132,12 @@ function Footer() {
           <ul className="space-y-2 text-sm">
             {Object.values(navegation).map((title) => (
               <li key={title}>
-                <a href={`#${title}`} className="hover:text-gray-800">
+                <Link 
+                  to={getSectionUrl(title)} 
+                  className="hover:text-gray-800"
+                >
                   {t(`menu.${title}`)}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

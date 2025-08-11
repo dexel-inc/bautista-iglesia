@@ -27,9 +27,15 @@ const DonationSection = () => {
         </div>
 
         <div className="flex-1 w-full md:max-w-md">
-          <div className="bg-white rounded-2xl border-1 border-gray-200 md:border-none shadow-md p-6 mb-4">
-            <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4">
-              <div className="content-center w-full">
+          <div className="bg-white rounded-2xl border-1 border-gray-200 md:border-none shadow-md mb-4">
+            <div className="w-full bg-purple-600 text-white text-center py-1 rounded-t-lg">
+              <span className="text-sm font-medium">
+                { t('support.support_now') }
+              </span>
+            </div>
+            
+            <div className="flex flex-col md:flex-row md:items-center gap-4 mb-4 p-6">
+              <div className="flex justify-center content-center w-full">
                 <ZelleIco className="w-20 h-20" />
               </div>
               <div className="text-left w-full">
@@ -55,10 +61,6 @@ const DonationSection = () => {
               </div>
             </div>
           </div>
-
-          <button className="w-full bg-purple-600 hover:bg-purple-700 text-white font-semibold py-3 px-6 rounded-xl shadow">
-            { t('support.support_now') }
-          </button>
         </div>
       </div>
     </section>

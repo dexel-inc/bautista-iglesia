@@ -1,12 +1,13 @@
 import {useTranslation} from "react-i18next";
-import {Link} from "react-router-dom";
 
 function FloatingRadioButton() {
     const { t } = useTranslation();
 
     return (
-        <Link 
-          to={"https://radiolavoz.net/listen/"} 
+        <a 
+          href="https://radiolavoz.net/listen/" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="group fixed bottom-5 right-5 z-20 flex items-center space-x-2"
           aria-label={t('radio.button')}
         >
@@ -87,7 +88,7 @@ M168.859344,106.475739
 z"/>
                 </svg>
             </div>
-        </Link>
+        </a>
     )
 }
 
