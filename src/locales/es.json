@@ -56,7 +56,7 @@
     "title": "Dios Te Quiere Hablar",
     "description": "Te invitamos a escuchar nuestra transmisión en la emisora cristiana La Voz, un ministerio de la Iglesia Bautista Fundamental Berea dedicado a proclamar fielmente el evangelio de Jesucristo a través de predicaciones de sana doctrina y música que exalta al Señor.",
     "button": "Escúchanos ahora",
-    "schedule": "Lunes - Viernes 6/7 Hora de Az<br/>9 a.m / p.m EST"
+    "schedule": "Lunes - Viernes 6/7 a.m y p.m - Hora de Arizona<br/>9 a.m / p.m EST"
   },
   "activities": {
     "preaching": "Predicación Bíblica, viva y directa",
@@ -71,7 +71,7 @@
   "support": {
     "description": "Tu generosidad marca la diferencia. <br /> Si deseas apoyar este ministerio y ser parte de lo que Dios está haciendo a través de nuestra iglesia, puedes realizar tu donación de forma rápida y segura usando Zelle.",
     "thanks": "¡Gracias Por Sembrar En La Obra Del Señor!",
-    "support_now": "Apoyanos ahora"
+    "support_now": "Para apoyarnos"
   },
   "who_we_are": {
     "title": "¿Quienes somos?",
@@ -99,7 +99,7 @@
     "missionaries": "Misioneros",
     "description": "Conozca a las familias misioneras que están llevando el Evangelio a diferentes regiones del mundo."
   },
-  "latest_video_title" : "Ultimo Video",
+  "latest_video_title" : "Último servicio",
   "services": {
     "title": "Nuestros Servicios",
     "sunday": "Domingo 11 A.M.",
