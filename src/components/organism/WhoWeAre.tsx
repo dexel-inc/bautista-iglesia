@@ -1,5 +1,5 @@
 import {useTranslation} from "react-i18next";
-import churchImg from "../../../public/assets/community-meeting.webp";
+import churchImg from "@/assets/community-meeting.webp";
 import AnimateOnScroll from "@/components/molecules/AnimateOnScroll.tsx";
 
 export default function WhoWeAre() {

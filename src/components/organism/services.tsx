@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import ServicesBanner from "@/components/molecules/ServicesBanner";
-import churchImage from "../../../public/assets/church-image.png";
+import churchImage from "@/assets/church-image.png";
 import churchInfo from "@/services/churchInfo.json";
 
 export default function Services() {
