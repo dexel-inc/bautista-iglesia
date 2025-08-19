@@ -29,6 +29,9 @@ function SideBar() {
               <li>
                   <Link to="/about#home" onClick={closeSidebar}>{t("menu.aboutUs")}</Link>
               </li>
+              <li>
+                  <Link to="/about#missionaries" onClick={closeSidebar}>{t("menu.missionaries")}</Link>
+              </li>
               <LanguageSwitcher/>
               <Link
                   to="/#donations"
