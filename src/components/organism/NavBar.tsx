@@ -23,6 +23,9 @@ function NavBar() {
           <li>
             <Link to="/about#home">{t("menu.aboutUs")}</Link>
           </li>
+          <li>
+            <Link to="/about#missionaries">{t("menu.missionaries")}</Link>
+          </li>
           <LanguageSwitcher />
           <Link
             to="/#donations"

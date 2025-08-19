@@ -6,6 +6,8 @@ export default function About() {
   return <section className="flex flex-col">
     <Hero/>
     <History/>
-    <Missionaries/>
+    <div id="missionaries">
+      <Missionaries />
+    </div>
   </section>;
 }
