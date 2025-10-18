@@ -14,7 +14,8 @@ const navigationMapping: Record<string, { page: string; section: string }> = {
   home: { page: "/", section: "home" },
   radio: { page: "/", section: "radio" },
   donations: { page: "/", section: "donations" },
-  aboutUs: { page: "/about", section: "home" } 
+  aboutUs: { page: "/about", section: "home" },
+  missionaries: { page: "/about", section: "missionaries" }
 };
 
 function Footer() {
