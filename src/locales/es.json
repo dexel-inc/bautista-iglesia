@@ -98,7 +98,11 @@
   },
   "missionaries": {
     "missionaries": "Misioneros",
-    "description": "Conozca a las familias misioneras que están llevando el Evangelio a diferentes regiones del mundo."
+    "description": "Conozca a las familias misioneras que están llevando el Evangelio a diferentes regiones del mundo. Haz click sobre cada uno de ellos para ver sus cartas de oración.",
+    "prayletter": {
+      "link": "Ver carta de oración",
+      "file": "Descargar carta de oración"
+    }
   },
   "latest_video_title" : "Último servicio",
   "services": {

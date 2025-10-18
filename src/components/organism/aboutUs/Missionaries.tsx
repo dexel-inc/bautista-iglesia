@@ -9,10 +9,10 @@ import { useTranslation } from "react-i18next";
 import apiService from "@/domain/services/api.service.ts";
 
 const missionariesMock = [
-    { title: 'Kings to Mexico', image: M3, message: 'Reaching the heart of Mexico. Pray for the King family as they minister in Guanajuato.' },
-    { title: 'Stoltzfus Family', image: M4, message: 'Serving through Prayer Baptist Missions International. Ministry of HELPS.' },
-    { title: 'Missions In Action International', image: M1, message: 'Supporting church planting and training nationals around the world.' },
-    { title: 'Missions In Action International', image: M2, message: 'Supporting church planting and training nationals around the world.' },
+    { title: 'Kings to Mexico', image: M3, message: 'Reaching the heart of Mexico. Pray for the King family as they minister in Guanajuato.', type: 'link', url: null },
+    { title: 'Stoltzfus Family', image: M4, message: 'Serving through Prayer Baptist Missions International. Ministry of HELPS.', type: 'link', url: null },
+    { title: 'Missions In Action International', image: M1, message: 'Supporting church planting and training nationals around the world.', type: 'link', url: null },
+    { title: 'Missions In Action International', image: M2, message: 'Supporting church planting and training nationals around the world.', type: 'file', url: null },
 ];
 
 type MissionaryCardProps = {
@@ -25,7 +25,10 @@ const MissionaryCard = ({ missionary, onClick }: MissionaryCardProps) => (
         className="card bg-base-100 shadow-xl cursor-pointer rounded-lg hover:scale-105 transition-transform h-60 md:h-50"
         onClick={() => onClick(missionary)}
     >
-        <img src={missionary.image} alt={missionary.title} className="rounded-lg w-full h-full object-contain" />
+        <img
+            src={missionary.image ?? "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"}
+            alt={missionary.title}
+            className="rounded-lg w-full h-full object-contain" />
     </div>
 );
 
@@ -67,7 +70,7 @@ const MissionaryModal = ({ missionary, onClose, isModalOpen }: MissionaryModalPr
             >
                 <div className="absolute top-0 right-0 p-2">
                     <form method="dialog">
-                        <button 
+                        <button
                             className="btn btn-link hover:bg-gray-100 radio-xl fill-gray-800 text-gray-800 w-8 h-8"
                             aria-label={t("accessibility.buttons.close")}
                         >
@@ -89,12 +92,25 @@ const MissionaryModal = ({ missionary, onClose, isModalOpen }: MissionaryModalPr
                     </div>
                 )}
 
+                <h3 className="px-10 text-xl font-bold m-2">{missionary.title}</h3>
                 <img
-                    src={missionary.image}
+                    src={missionary.image ?? "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"}
                     alt={`Foto de la familia misionera: ${missionary.title}`}
                     onLoad={() => setLoaded(true)}
                     className={`w-full h-full object-contain transition-opacity duration-300 ${loaded ? 'opacity-100' : 'opacity-0'} max-h-120 rounded`}
                 />
+                {missionary.type && missionary.url && (
+                    <a
+                        href={missionary.url}
+                        download={missionary.type === "file"}
+                        target="_blank"
+                        rel={missionary.type === "link" ? "noopener noreferrer" : undefined}
+                        aria-label={t(`missionaries.prayletter.${missionary.type}`)}
+                        className="m-2 btn bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 rounded-xl"
+                    >
+                        {t(`missionaries.prayletter.${missionary.type}`)}
+                    </a>
+                )}
             </div>
             <form method="dialog" className="modal-backdrop">
                 <button aria-label={t("accessibility.buttons.close")}>close</button>

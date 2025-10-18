@@ -95,7 +95,11 @@
   },
   "missionaries": {
     "missionaries": "Missionaries",
-    "description": "Meet the missionary families who are taking the Gospel to different regions of the world."
+    "description": "Meet the missionary families who are taking the Gospel to different regions of the world. Click on each one to see its pray letters.",
+    "prayletter": {
+      "link": "See pray letter",
+      "file": "Download pray letter"
+    }
   },
   "latest_video_title" : "Latest Service",
   "services": {
