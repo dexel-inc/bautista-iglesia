@@ -107,7 +107,7 @@ function Footer() {
           </div>
           <p className="text-sm mb-2">
             {t("footer.short_desc") + " "}
-            <a href="#" className="text-gray-600 underline hover:text-gray-800">
+            <a href="/about#home" className="text-gray-600 underline hover:text-gray-800">
               {" "}
               {t("common.read_more")}
             </a>
