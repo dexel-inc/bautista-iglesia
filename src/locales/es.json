@@ -14,7 +14,7 @@
     "read_more": "Leer más",
     "schedules": "Horarios",
     "navegation": "Navegación",
-    "week_days":{
+    "week_days": {
       "thursday": "Jueves",
       "sunday": "Domingo"
     },
@@ -104,7 +104,7 @@
       "file": "Descargar carta de oración"
     }
   },
-  "latest_video_title" : "Último servicio",
+  "latest_video_title": "Último servicio",
   "shorts": {
     "badge": "Nuevo en YouTube",
     "title": "Últimos Reels",
@@ -134,6 +134,7 @@
     "view_map": "Ver mapa más grande"
   },
   "salvation": {
+    "badge": "Salvación",
     "title": "¿Puede alguien saber con seguridad donde pasará la eternidad al morir?",
     "intro": "Una pregunta profunda con una respuesta que puede cambiar tu eternidad.",
     "content": "Es una pregunta difícil. Si pensamos solo por lo que podemos ver con nuestros ojos, nadie puede saber realmente hasta que esté muerto. Pero no todo lo que existe realmente se debe ver para saber que existe. Ejercemos nuestra fe todos los días. Por fe salimos de nuestra casa confiando que habrá oxígeno para respirar, aunque no lo vemos; si no, entonces todos traeríamos nuestro tanque de oxígeno. Por fe aceptamos que lo que nos sirven en el restaurante está limpio y comestible, aceptamos por la palabra del que nos vende los alimentos. Entonces la fe es esencial para toda nuestra existencia. ¿Por qué es tan difícil creer lo que Dios dice en Su Palabra? Él nos dice cómo podemos tener seguridad de ir al cielo cuando muramos.",
