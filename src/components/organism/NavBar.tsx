@@ -1,35 +1,59 @@
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Logo from "@/components/atoms/Logo.tsx";
 import LanguageSwitcher from "@/components/molecules/LanguageSwitcher.tsx";
 
+const NAV_LINKS = [
+  { to: "/#home", label: "menu.home" },
+  { to: "/#radio", label: "menu.radio" },
+  { to: "/about#home", label: "menu.aboutUs" },
+  { to: "/about#missionaries", label: "menu.missionaries" },
+];
+
 function NavBar() {
   const { t } = useTranslation();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 24);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <div className="navbar justify-items-center content-center bg-transparent w-full shadow fixed top-0 left-0 right-0 z-20 px-4">
-      <div className="title mx-2 flex-1 flex px-2 items-center min-h-[1.5rem]">
-        <Logo className="w-16 h-16 lg:w-20 lg:h-20" />
-        <span className="font-medium text-inherit">{t("siteTitle")}</span>
+    <div
+      className={`navbar fixed top-0 right-0 left-0 z-20 w-full content-center justify-items-center px-4 ${
+        scrolled ? "navbar-scrolled py-1" : "navbar-top py-2"
+      }`}
+    >
+      <div className="title mx-2 flex flex-1 items-center px-2 min-h-[1.5rem]">
+        <Logo
+          className={`transition-all duration-500 ${
+            scrolled ? "w-12 h-12 lg:w-14 lg:h-14" : "w-16 h-16 lg:w-20 lg:h-20"
+          }`}
+        />
+        <span className="font-medium tracking-wide text-inherit">
+          {t("siteTitle")}
+        </span>
       </div>
       <div className="hidden flex-none lg:block">
-        <ul className="menu menu-horizontal">
-          <li>
-            <Link to="/#home">{t("menu.home")}</Link>
-          </li>
-          <li>
-            <Link to="/#radio">{t("menu.radio")}</Link>
-          </li>
-          <li>
-            <Link to="/about#home">{t("menu.aboutUs")}</Link>
-          </li>
-          <li>
-            <Link to="/about#missionaries">{t("menu.missionaries")}</Link>
-          </li>
+        <ul className="menu menu-horizontal items-center gap-1">
+          {NAV_LINKS.map((link) => (
+            <li key={link.to}>
+              <Link
+                to={link.to}
+                className="nav-link rounded-full px-3 hover:bg-white/10 focus:bg-white/10"
+              >
+                {t(link.label)}
+              </Link>
+            </li>
+          ))}
           <LanguageSwitcher />
           <Link
             to="/#donations"
-            className="ml-4 btn bg-primary-500 hover:bg-primary-600 text-white px-6 py-2 border-none rounded-tr-lg shadow-none rounded-tl-none rounded-bl-lg rounded-br-none"
+            className="ml-4 inline-flex items-center justify-center rounded-full border-none bg-primary-500 px-6 py-2 text-sm font-semibold text-white shadow-lg shadow-primary-500/25 transition-all duration-300 hover:-translate-y-0.5 hover:bg-primary-600 hover:shadow-xl focus:outline-none focus-visible:ring-4 focus-visible:ring-primary-300/60"
           >
             {t("menu.donations")}
           </Link>
@@ -39,7 +63,7 @@ function NavBar() {
         <label
           htmlFor="sidebar"
           aria-label={t("accessibility.buttons.menu")}
-          className="btn btn-square btn-ghost"
+          className="btn btn-square btn-ghost transition-transform duration-300 hover:scale-110"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

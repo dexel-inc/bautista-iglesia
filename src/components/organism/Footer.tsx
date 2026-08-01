@@ -80,7 +80,7 @@ function Footer() {
             <button
               type="submit"
               aria-label={t("accessibility.buttons.subscribe")}
-              className="bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl"
+              className="cursor-pointer bg-primary-500 hover:bg-primary-600 text-white font-semibold px-6 py-3 rounded-xl"
             >
               {t("footer.subscribe")}
             </button>
