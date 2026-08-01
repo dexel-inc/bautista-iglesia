@@ -102,6 +102,15 @@
     }
   },
   "latest_video_title" : "Latest Service",
+  "shorts": {
+    "badge": "New on YouTube",
+    "title": "Latest Reels",
+    "description": "Short moments from our services, sermons, and activities. Tap one to watch.",
+    "play": "Play reel",
+    "scroll_hint": "Swipe to see more ↓",
+    "empty": "No reels available right now. Visit our channel to see all the content.",
+    "watch_channel": "Visit channel"
+  },
   "services": {
     "title": "Our Services",
     "sunday": "Sunday 11 A.M.",
@@ -137,5 +146,16 @@
     },
     "call_to_action": "You can be saved right now.",
     "verse": "Romans 10:13 says: “For whoever calls on the name of the Lord shall be saved.”"
+  },
+  "accessibility": {
+    "buttons": {
+      "close": "Close",
+      "menu": "Open menu",
+      "subscribe": "Subscribe to newsletter",
+      "carousel_prev": "Previous item",
+      "carousel_next": "Next item",
+      "carousel_goto": "Go to item {{index}}",
+      "language_switch": "Switch language to {{language}}"
+    }
   }
 }

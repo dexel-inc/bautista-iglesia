@@ -4,6 +4,7 @@ import ChurchActivities from '@/components/organism/ChurchActivities.tsx';
 import DonationSection from '@/components/organism/DonationSection.tsx';
 import Radio from '@/components/organism/Radio.tsx';
 import LatestYoutubeVideo from "@/components/organism/LatestYTVideo";
+import LatestShorts from "@/components/organism/LatestShorts";
 import LocationSection from "@/components/organism/LocationSection";
 import Services from "@/components/organism/services";
 import Testimonials from "@/components/organism/testimonials";
@@ -18,7 +19,8 @@ export default function Home() {
       <Services />
       <LocationSection />
       <LatestYoutubeVideo />
-      <Salvation/>    
+      <LatestShorts />
+      <Salvation/>
       <Testimonials />
       <Radio/>
       <DonationSection />

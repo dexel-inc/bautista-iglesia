@@ -105,6 +105,15 @@
     }
   },
   "latest_video_title" : "Último servicio",
+  "shorts": {
+    "badge": "Nuevo en YouTube",
+    "title": "Últimos Reels",
+    "description": "Momentos cortos de nuestros servicios, predicaciones y actividades. Toca uno para verlo.",
+    "play": "Reproducir reel",
+    "scroll_hint": "Desliza para ver más ↓",
+    "empty": "Por ahora no hay reels disponibles. Visita nuestro canal para ver todo el contenido.",
+    "watch_channel": "Ver el canal"
+  },
   "services": {
     "title": "Nuestros Servicios",
     "sunday": "Domingo 11 A.M.",

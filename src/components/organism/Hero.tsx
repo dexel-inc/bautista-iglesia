@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div
         id="home"
-        className="w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
+        className="relative w-full h-[100vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${churchHero})` }}
     >
       <div className="w-full h-full bg-black/15 flex items-center justify-center p-8">
@@ -25,6 +25,12 @@ export default function Hero() {
           </AnimateOnScroll>
         </div>
       </div>
+         <span
+        aria-hidden
+        className="absolute bottom-8 left-1/2 flex h-11 w-7 -translate-x-1/2 justify-center rounded-full border-2 border-white/60 pt-2"
+      >
+        <span className="h-2 w-1 animate-bounce rounded-full bg-white/80" />
+      </span>
     </div>
   );
 }
